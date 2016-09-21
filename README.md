@@ -5,4 +5,4 @@
 * Burak Tekin
 * Filip Djordevic
 * Florian Wellner
-* Markus Reichl @re1
+* Markus Reichl [@re1](http://github.com/re1)
