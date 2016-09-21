@@ -1,4 +1,4 @@
-# CODENAME-HERO
+# CODENAME:HERO
 ## A Rougelike Bullethell RPG
 
 ### Team
