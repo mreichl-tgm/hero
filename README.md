@@ -2,6 +2,7 @@
 <h4>A Rougelike Bullethell RPG :octocat:</h4>
 <br>
 
-Burak Tekin | Filip Djordjevic | Florian Wellner | Markus Reichl
------------ | ---------------- | --------------- | -------------
-[@atekin-tgm](http://github.com/atekin-tgm) | [@filipdjordjevic](http://github.com/filipdjordjevic) | [@fwellner-tgm](http://github.com/fwellner-tgm) | [@re1](http://github.com/re1)
+Filip Djordjevic | Markus Reichl | Burak Tekin | Florian Wellner
+---------------- | ---------------- | ---------------- | ----------------
+Dokumentation | Projektleitung | Grafik | Programmierung
+[@filipdjordjevic](http://github.com/filipdjordjevic) | [@re1](http://github.com/re1) |[@atekin-tgm](http://github.com/atekin-tgm) |[@fwellner-tgm](http://github.com/fwellner-tgm)
