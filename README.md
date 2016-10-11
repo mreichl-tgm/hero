@@ -1,7 +1,5 @@
 <h3>CODENAME: HERO</h3>
 <h4>A Rougelike Bullethell RPG :octocat:</h4>
-<br>
-
 Filip Djordjevic | Markus Reichl | Burak Tekin | Florian Wellner
 ---------------- | ---------------- | ---------------- | ----------------
 Dokumentation | Projektleitung | Grafik | Programmierung
