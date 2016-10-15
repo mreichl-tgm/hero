@@ -1,9 +1,11 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
 
-public class Player : Moveable
+public class Player : Moveable, IAlive
 {
-	void Update ()
+    public int health { get; set; }
+
+    void Update ()
     {
 		//UP
 		if (Input.GetKey (KeyCode.W))
@@ -28,7 +30,6 @@ public class Player : Moveable
 			MoveRight ();       //constant velocity, not accelerating
         if (Input.GetKeyUp(KeyCode.D))
             Stop();             //stops movement when key is released
-
 
         //UPRIGHT
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
