@@ -4,7 +4,7 @@ using System.Collections;
 public class DestroyObject : MonoBehaviour {
 
 	void Start () {
-		Destroy (gameObject, 2f);
+		Destroy (gameObject, 1.2f);
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
