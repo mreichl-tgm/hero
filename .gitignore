@@ -28,3 +28,6 @@
 *.tmp
 
 sysinfo.txt
+
+# Unity
+UpgradeLog.htm
