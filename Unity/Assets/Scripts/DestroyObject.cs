@@ -4,11 +4,13 @@ using System.Collections;
 public class DestroyObject : MonoBehaviour {
 
 	void Start () {
-		Destroy (gameObject, 1.2f);
+		Destroy (gameObject, 3f);
+
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		if (other.gameObject.tag != "Player" && other.gameObject.tag != "Projectile") {
+		if (gameObject.tag != other.gameObject.tag) {
+		//if (other.gameObject.tag != "Player" && other.gameObject.tag != "Projectile") {
 			Destroy (other.gameObject);
 			Destroy (gameObject, 0.015f);
 		}

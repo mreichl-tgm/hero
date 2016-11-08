@@ -4,9 +4,6 @@
 # JetBrains
 .idea
 
-# IntelliJ
-/out/
-
 # Microsoft Office
 *.tmp
 ~$*.doc*

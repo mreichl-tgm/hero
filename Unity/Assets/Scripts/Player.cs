@@ -5,10 +5,6 @@ public class Player : MonoBehaviour {
 
 	public float speed;
 
-	[SerializeField]
-	private float Test{ get; set; }
-
-	[SerializeField]
 	private Rigidbody2D rb2D;
 
 	private float moveHorizontal;
