@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 public class Equipment : MonoBehaviour {
+	
 	[SerializeField]
 	private GameObject weapon;
 	[SerializeField]

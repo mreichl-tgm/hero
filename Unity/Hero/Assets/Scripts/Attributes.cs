@@ -3,6 +3,7 @@ using System;
 
 [Serializable]
 public class Attributes {
+	
 	public int life;
 	public int mana;
 	public int vitality;
