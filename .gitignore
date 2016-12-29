@@ -2,7 +2,7 @@
 *.lock
 
 ## JetBrains
-.idea/
+.idea
 
 ## Microsoft Office
 *.tmp
@@ -25,17 +25,17 @@
 *.userprefs
 *.opt
 *.tmp
-.vs/
-ExportedObj/
-/obj/
+.vs
+ExportedObj
+/obj
 
 sysinfo.txt
 
 ## Unity
 *.log
 /UpgradeLog.htm
-/Temp/
-/Library/
+/Temp
+/Library
 
 ## OS
 .DS_Store
