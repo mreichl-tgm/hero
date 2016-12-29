@@ -25,17 +25,17 @@
 *.userprefs
 *.opt
 *.tmp
-.vs
-ExportedObj
-/obj
+*/.vs
+*/ExportedObj
+*/obj
 
 sysinfo.txt
 
 ## Unity
 *.log
-/UpgradeLog.htm
-/Temp
-/Library
+*/UpgradeLog.htm
+*/Temp
+*/Library
 
 ## OS
 .DS_Store
