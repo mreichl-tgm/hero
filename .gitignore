@@ -1,10 +1,10 @@
-# Astah
+## Astah
 *.lock
 
-# JetBrains
-.idea
+## JetBrains
+.idea/
 
-# Microsoft Office
+## Microsoft Office
 *.tmp
 ~$*.doc*
 ~$*.xls*
@@ -12,17 +12,36 @@
 ~$*.ppt*
 .~vsdx
 
-# Visual Studio
+## Visual Studio
+*.booproj
+*.coverage
+*.pidb
 *.suo
+*.svd
+*.sln.docstates
+*.unityproj
 *.user
 *.userosscache
-*.sln.docstates
-.vs/
-*.coverage
+*.userprefs
 *.opt
 *.tmp
+.vs/
+ExportedObj/
+/obj/
 
 sysinfo.txt
 
-# Unity
-UpgradeLog.htm
+## Unity
+*.log
+/UpgradeLog.htm
+/Temp/
+/Library/
+
+## OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
