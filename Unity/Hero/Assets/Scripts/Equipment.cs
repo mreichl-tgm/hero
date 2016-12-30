@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using System;
 
-public class Equipment : MonoBehaviour {
-	
+[Serializable]
+public class Equipment {
+
 	[SerializeField]
 	private GameObject weapon;
 	[SerializeField]
