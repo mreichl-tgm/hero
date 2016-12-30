@@ -32,6 +32,7 @@
 sysinfo.txt
 
 ## Unity
+*.cs.meta
 *.log
 */UpgradeLog.htm
 */Temp

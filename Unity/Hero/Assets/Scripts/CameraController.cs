@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
 public class CameraController : MonoBehaviour {
-
-	public GameObject target;
-
+	
+	[SerializeField]
+	private GameObject target;
 	private Vector3 offset;
 
 	void Start() {

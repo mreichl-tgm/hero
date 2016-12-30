@@ -1,13 +1,15 @@
 ﻿<Properties RefactoringSettings.EnableRefactorings="True" StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Inventory.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Item\ItemEffect\ActivatedItemEffect.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Attributes.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerModel.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Inventory.cs" Line="9" Column="2" />
-      <File FileName="Assets\Scripts\Equipment.cs" Line="5" Column="25" />
-      <File FileName="Assets\Scripts\CameraController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Attributes.cs" Line="3" Column="1" />
+      <File FileName="Assets\Scripts\CameraController.cs" Line="16" Column="2" />
+      <File FileName="Assets\Scripts\Item\ActivatedIE.cs" Line="3" Column="21" />
+      <File FileName="Assets\Scripts\Item\ItemEffect.cs" Line="4" Column="2" />
+      <File FileName="Assets\Scripts\IActivatable.cs" Line="2" Column="1" />
+      <File FileName="Assets\Scripts\Item\ItemEffect\ActivatedItemEffect.cs" Line="14" Column="2" />
+      <File FileName="Assets\Scripts\Effect\Effect.cs" Line="5" Column="2" />
+      <File FileName="Assets\Scripts\Effect\ActivatableEffect.cs" Line="5" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
