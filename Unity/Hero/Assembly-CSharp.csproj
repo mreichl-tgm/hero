@@ -50,7 +50,8 @@
      <Compile Include="Assets\Scripts\Character\CharacterModel.cs" />
      <Compile Include="Assets\Scripts\Character\PlayerModel.cs" />
      <Compile Include="Assets\Scripts\Character\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\Effect\ActivatableEffect.cs" />
+     <Compile Include="Assets\Scripts\Effect\ActivatableEffect\ActivatableEffect.cs" />
+     <Compile Include="Assets\Scripts\Effect\ActivatableEffect\Attack.cs" />
      <Compile Include="Assets\Scripts\Effect\Effect.cs" />
      <Compile Include="Assets\Scripts\IActivatable.cs" />
      <Compile Include="Assets\Scripts\Item\Equipment.cs" />
