@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using System;
 
-[Serializable]
+[System.Serializable]
 public class Attributes {
 	
 	public int life;

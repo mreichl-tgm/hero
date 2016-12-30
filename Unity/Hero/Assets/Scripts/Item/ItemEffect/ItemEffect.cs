@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
 
-public abstract class ItemEffect : MonoBehaviour {
+public abstract class ItemEffect : Effect {
 	
 }
