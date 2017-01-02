@@ -1,15 +1,13 @@
 ﻿using UnityEngine;
 
 public class AIController : MonoBehaviour {
-	private AIModel model;
-	private ActivatableEffect[] attacks;
+	private Attack attack;
 
 	void Awake() {
-		model = GetComponent<AIModel>();
-		attacks = GetComponents<Attack>();
+		attack = GetComponent<Attack>();
+	}
 
-		foreach (Attack a in attacks) {
-			a.Activate();
-		}
+	void Start() {
+		attack.Activate();
 	}
 }

@@ -15,7 +15,7 @@ public class Attack : ActivatableEffect {
 	[SerializeField]
 	private float rate;
 
-	private float lastTime;
+	private float last;
 	private bool active;
 
 	public override void Activate() {
@@ -24,17 +24,18 @@ public class Attack : ActivatableEffect {
 
 	void Awake() {
 		active = false;
+		last = 0F;
 	}
 
 	void FixedUpdate() {
-		if (active && Time.time > lastTime + (rate / 100 - source.GetComponent<Attributes>().agility / 100)) {
-			lastTime = Time.time;
+		if (active && Time.time > last + rate / 100 - source.GetComponent<Attributes>().agility / 100) {
+			last = Time.time;
 
 			Vector3 force = (target.transform.position - source.transform.position).normalized;
 
-			Quaternion rotation = Quaternion.FromToRotation (source.transform.position, target.transform.position);
+			Quaternion rotation = Quaternion.Euler(0, 0, Mathf.Atan2(force.y, force.x) * Mathf.Rad2Deg);
 
-			GameObject instance = Instantiate (projectile, source.transform.position, rotation) as GameObject;
+			GameObject instance = Instantiate(projectile, source.transform.position, rotation) as GameObject;
 			instance.GetComponent<Rigidbody2D>().AddForce (force * speed);
 
 			Destroy (instance, range);
