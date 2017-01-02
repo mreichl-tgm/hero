@@ -10,24 +10,34 @@ public class Attack : ActivatableEffect {
 	private GameObject target;
 	[SerializeField]
 	private float speed;
+	[SerializeField]
+	private float range;
+	[SerializeField]
+	private float rate;
 
-	private Vector3 destination;
-	private Vector3 origin;
-
-	void Awake() {
-		destination = target.transform.position;
-		origin = source.transform.position;
-	}
+	private float lastTime;
+	private bool active;
 
 	public override void Activate() {
-		Vector3 force = Camera.main.WorldToScreenPoint(origin - destination).normalized;
+		active = !active;
+	}
 
-		float angle = Mathf.Atan2(force.y, force.x) * Mathf.Rad2Deg;
+	void Awake() {
+		active = false;
+	}
 
-		projectile.transform.rotation = Quaternion.Euler(0, 0, angle);
+	void FixedUpdate() {
+		if (active && Time.time > lastTime + (rate / 100 - source.GetComponent<Attributes>().agility / 100)) {
+			lastTime = Time.time;
 
-		Rigidbody2D projectile2D;
-		projectile2D = Instantiate (projectile.GetComponent<Rigidbody2D>(), origin, projectile.transform.rotation) as Rigidbody2D;
-		projectile2D.AddForce(force * speed);
+			Vector3 force = (target.transform.position - source.transform.position).normalized;
+
+			Quaternion rotation = Quaternion.FromToRotation (source.transform.position, target.transform.position);
+
+			GameObject instance = Instantiate (projectile, source.transform.position, rotation) as GameObject;
+			instance.GetComponent<Rigidbody2D>().AddForce (force * speed);
+
+			Destroy (instance, range);
+		}
 	}
 }

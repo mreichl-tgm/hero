@@ -7,7 +7,7 @@ public class ActivatableItemEffect : ItemEffect {
 	private ActivatableEffect effect;
 
 	void FixedUpdate() {
-		if (Input.GetKey(trigger)) {
+		if (Input.GetKeyDown(trigger)) {
 			effect.Activate();
 		}
 	}

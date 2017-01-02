@@ -10,13 +10,12 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Awake() {
 		rb2D = GetComponent<Rigidbody2D>();
-		attributes = GetComponent<PlayerModel>().attributes;
 	}
 
 	void FixedUpdate() {
 		vHorizontal = Input.GetAxisRaw("Horizontal");
 		vVertical = Input.GetAxisRaw("Vertical");
 
-		rb2D.velocity = new Vector2(vHorizontal, vVertical) * attributes.speed;
+		rb2D.velocity = new Vector2(vHorizontal, vVertical) * GetComponent<Attributes>().speed;
 	}
 }

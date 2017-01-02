@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
-[System.Serializable]
-public class Attributes {
+public class Attributes : MonoBehaviour {
 	
 	public int life;
 	public int mana;

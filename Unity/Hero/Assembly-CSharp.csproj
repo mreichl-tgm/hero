@@ -47,6 +47,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Attributes.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Character\AI\AIController.cs" />
+     <Compile Include="Assets\Scripts\Character\AI\AIModel.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterModel.cs" />
      <Compile Include="Assets\Scripts\Character\Player\PlayerModel.cs" />
      <Compile Include="Assets\Scripts\Character\Player\PlayerMovement.cs" />
