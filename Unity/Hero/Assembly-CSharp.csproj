@@ -49,20 +49,23 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Character\AI\AIController.cs" />
      <Compile Include="Assets\Scripts\Character\AI\AIModel.cs" />
+     <Compile Include="Assets\Scripts\Character\AI\AIMovement.cs" />
+     <Compile Include="Assets\Scripts\Character\AI\AISpawner.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterModel.cs" />
      <Compile Include="Assets\Scripts\Character\Player\PlayerModel.cs" />
      <Compile Include="Assets\Scripts\Character\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\CursorController.cs" />
      <Compile Include="Assets\Scripts\Effect\ActivatableEffect\ActivatableEffect.cs" />
      <Compile Include="Assets\Scripts\Effect\ActivatableEffect\Attack.cs" />
+     <Compile Include="Assets\Scripts\Effect\ActivatableEffect\IActivatable.cs" />
      <Compile Include="Assets\Scripts\Effect\Effect.cs" />
-     <Compile Include="Assets\Scripts\IActivatable.cs" />
      <Compile Include="Assets\Scripts\Item\Inventory.cs" />
      <Compile Include="Assets\Scripts\Item\ItemEffect\ActivatableItemEffect.cs" />
      <Compile Include="Assets\Scripts\Item\ItemEffect\ItemEffect.cs" />
      <Compile Include="Assets\Scripts\Item\ItemModel.cs" />
      <Compile Include="Assets\Scripts\Item\ItemSlot.cs" />
      <Compile Include="Assets\Scripts\Item\ItemType.cs" />
+     <Compile Include="Assets\Scripts\Util.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

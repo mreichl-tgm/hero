@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
+using Hero.Util;
 
 public class AIController : MonoBehaviour {
+	
 	private Attack attack;
 
 	void Awake() {
@@ -8,6 +10,7 @@ public class AIController : MonoBehaviour {
 	}
 
 	void Start() {
+		attack.target = Util.ClosestGameObjectWithTag(this.gameObject, "Player");
 		attack.Activate();
 	}
 }

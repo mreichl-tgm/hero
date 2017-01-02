@@ -2,8 +2,8 @@
 
 public class PlayerMovement : MonoBehaviour {
 	
-	private Rigidbody2D rb2D;
 	private Attributes attributes;
+	private Rigidbody2D rb2D;
 
 	private float vHorizontal;
 	private float vVertical;

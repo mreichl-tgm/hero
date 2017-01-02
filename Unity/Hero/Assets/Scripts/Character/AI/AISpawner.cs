@@ -1,0 +1,22 @@
+﻿using UnityEngine;
+
+public class AISpawner : MonoBehaviour {
+
+	[SerializeField]
+	private GameObject[] targets;
+	[SerializeField]
+	private float spawnRate;
+
+	private Vector3 spawnPoint;
+	private float last;
+
+	void FixedUpdate() {
+		spawnPoint = transform.position;
+
+		if (Time.time > last + spawnRate / 100) {
+			last = Time.time;
+
+			Instantiate(targets [Random.Range(0, targets.Length - 1)], spawnPoint, Quaternion.identity);
+		}
+	}
+}

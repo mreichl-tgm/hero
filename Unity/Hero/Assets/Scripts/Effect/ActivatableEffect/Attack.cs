@@ -2,12 +2,12 @@
 
 public class Attack : ActivatableEffect {
 
+	public GameObject target;
+
 	[SerializeField]
 	private GameObject projectile;
 	[SerializeField]
 	private GameObject source;
-	[SerializeField]
-	private GameObject target;
 	[SerializeField]
 	private float speed;
 	[SerializeField]
