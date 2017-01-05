@@ -8,4 +8,9 @@
 \contentsline {subsection}{\numberline {3.4}\texttt {/PF22/} Item Interaction}{3}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}\texttt {/PF30/} Effects}{3}{subsection.3.5}
 \contentsline {subsection}{\numberline {3.6}\texttt {/PF30/} Items}{3}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}\texttt {/PF31/} Inventory}{4}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.7}\texttt {/PF31/} Inventory}{3}{subsection.3.7}
+\contentsline {section}{\numberline {4}Product Specifications}{4}{section.4}
+\contentsline {subsection}{\numberline {4.1}\texttt {/PS10/} Scalable}{4}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}\texttt {/PS20/} Extendable}{4}{subsection.4.2}
+\contentsline {section}{\numberline {5}Quality}{4}{section.5}
+\contentsline {section}{\numberline {6}Conclusion}{4}{section.6}

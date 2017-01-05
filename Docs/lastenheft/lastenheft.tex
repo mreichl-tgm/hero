@@ -46,6 +46,11 @@
   \begin{abstract}
     \begin{flushleft}
       The Hero Project is a \textbf{bullethell roguelike multiplayer RPG} providing a very own storytelling and gameplay experience.
+      
+      Its main goal as a school project is to create a solid base for a video game ready for further development. The core should be highly abstract, stable and easy to extend.
+      \linebreak
+      \linebreak
+      This document provides some basic information about the project, its purpose and its major specifications.
      \end{flushleft}
   \end{abstract}
 \end{titlepage}
@@ -54,19 +59,22 @@
 \newpage
 
 \section{Introduction}
-The Hero Project is a \textbf{bullethell\footnotemark[1] roguelike\footnotemark[2] multiplayer\footnotemark[3] RPG\footnotemark[4]} providing a very own storytelling and gameplay experience.
-
-\footnotetext[1]{A video game sub-genre where the screen is usually covered in bullets.}
-\footnotetext[2]{A video game sub-genre which, based on the \href{http://roguebasin.com/roguelike-definition}{Roguebasin Interpretation}, is defined by 
-  \begin{itemize}
-    \item \textbf{Permanent Failure:} The player is encouraged to take responsibility for the risks he takes.
-    \item \textbf{Procedural Environments:} Most of the game world is generated and provides complexity in resources and other elements of the game.
-    \item \textbf{Resources:} The player can manage a limited amount of resources.
-  \end{itemize}
-  The \href{http://roguebasin.com/roguelike-definition}{Roguebasin}, \href{http://roguebasin.com/index.php?title=Berlin_Interpretation}{Berlin} and \href{http://roguetemple.com/roguelike-definition}{Roguetemple} Interpretation may give a more detailed explaination on this subject.
-}
-\footnotetext[3]{A multiplayer game allows but does not require clients to play together. The Hero Project is not meant to be played online only!}
-\footnotetext[4]{A roleplay game is a game in which the player assumes the roles of characters in a fictional setting and takes responsibility for his acting either thorugh literal acting.}
+The Hero Project is a \textbf{
+  bullethell
+  \footnote{A video game sub-genre where the screen is usually covered in bullets.}
+  roguelike
+  \footnote{A video game sub-genre which, based on the \href{http://roguebasin.com/roguelike-definition}{Roguebasin Interpretation}, is defined by 
+    \begin{itemize}
+      \item \textbf{Permanent Failure:} The player is encouraged to take responsibility for the risks he takes.
+      \item \textbf{Procedural Environments:} Most of the game world is generated and provides complexity in resources and other elements of the game.
+      \item \textbf{Resources:} The player can manage a limited amount of resources.
+    \end{itemize}
+    The \href{http://roguebasin.com/roguelike-definition}{Roguebasin}, \href{http://roguebasin.com/index.php?title=Berlin_Interpretation}{Berlin} and \href{http://roguetemple.com/roguelike-definition}{Roguetemple} Interpretation may give a more detailed explaination on this subject.
+  }
+  multiplayer
+  \footnote{A multiplayer game allows but does not require clients to play together. The Hero Project is not meant to be played online only!}
+  RPG\footnote{A roleplay game is a game in which the player assumes the roles of characters in a fictional setting and takes responsibility for his acting either thorugh literal acting.}
+} providing a very own storytelling and gameplay experience.
 
 It is highly inspired by previous titles in the roguelike and roleplay game genres, the most noteworthy being \href{https://realmofthemadgod.com}{Realm of the Mad God}, \href{http://www.devolverdigital.com/games/view/titan-souls}{Titan Souls} and \href{http://dodgeroll.com/gungeon/}{Enter the Gungeon}.
 
@@ -74,27 +82,41 @@ While all mentioned games are using a topdown pixelart setting The Hero Project 
 
 \section{Project Goals}
 The main goal of The Hero Project as a school project is to create a solid base for a video game ready for further development.
-This base includes all elements listed in the Product Functions and Product Specifications sections.
+This base includes all elements listed in the \hyperref[sec:pf]{Product Functions} and \hyperref[sec:ps]{Product Specifications} sections.
 
 \newpage
 
-\section{Product Functions}
+\section{Product Functions}\label{sec:pf}
 \subsection{\texttt{/PF10/} Atificial Intelligence}\label{subsec:pf10ai}
-Entities\footnote[1]{Every interacting object in the game is referred to as a (game) entity} similar to a character \ref{subsec:pf20character} are controlled by the game and interact with their environment including the player.
+Entities\footnote{Every interacting object in the game is referred to as a (game) entity} similar to a \hyperref[subsec:pf20character]{character} are controlled by the game and interact with their environment including the player.
 \subsection{\texttt{/PF20/} Character}\label{subsec:pf20character}
-A single client is able to control at least one characters actions and manage his inventory \ref{subsec:pf41inventory}.
-\subsection{\texttt{/PF21/} Movement}\label{susec:pf21movement}
+A single client is able to control at least one characters actions and manage his \hyperref[subsec:pf41inventory]{inventory}.
+\subsection{\texttt{/PF21/} Movement}\label{subsec:pf21movement}
 The player is able to control his characters movement using an input of his choice.
 \subsection{\texttt{/PF22/} Item Interaction}\label{subsec:pf22iteminteraction}
-The player is able to interact with items \ref{subsec:pf40items} in his inventory \ref{subsec:pf41inventory} and use their effects \ref{subsec:pf30effects} using his input or user interface.
+The player is able to interact with \hyperref[subsec:pf40items]{items} in his \hyperref[subsec:pf41inventory]{inventory} and use their \hyperref[subsec:pf30effects]{effects} using his input or user interface.
 \subsection{\texttt{/PF30/} Effects}\label{subsec:pf30effects}
 Game Entities can be given effects which allow them to interact with their environment.
 They can be activated or enabled or interact permanently.
 The most common effect, which is also implemented in the core game, is an attack.
 \subsection{\texttt{/PF30/} Items}\label{subsec:pf40items}
-Items are the main resource in the game. They can also be given effects \ref{subsec:pf30effects} which can interact with other entities.
+Items are the main resource in the game. They can also be given \hyperref[subsec:pf30effects]{effects} which can interact with other entities.
 \subsection{\texttt{/PF31/} Inventory}\label{subsec:pf41inventory}
 An inventory keeps a limited amount of items and is split into baseitems, equipment and the inventory itself.
 Storing an item inside the equipment allows the entity owning it to use its effects.
+
+\section{Product Specifications}\label{sec:ps}
+\subsection{\texttt{/PS10/} Scalable}
+The core game has to be highly scaleable which requires it to be abstract, decoupled and easy maintain.
+\subsection{\texttt{/PS20/} Extendable}
+Being only a core also implies that it will be extended which requires at least a modular pattern.
+
+\section{Quality}
+Extendability and functionality are high priority for the core game because of their huge influence on the later game.
+High quality graphics are only required for presentation and therefore low priority.
+
+\section{Conclusion}
+The Hero Project as a school project should lead to a core game ready to be extended to a full game later on.
+The cores quality has very high priority because of the influence on the games further development.
 
 \end{document}
