@@ -1,44 +1,38 @@
 ﻿using UnityEngine;
+using Hero.Util;
 
 public class Attack : ActivatableEffect {
-
-	public GameObject target;
-
+	
 	[SerializeField]
 	private GameObject projectile;
-	[SerializeField]
-	private GameObject source;
-	[SerializeField]
-	private float speed;
 	[SerializeField]
 	private float range;
 	[SerializeField]
 	private float rate;
+	[SerializeField]
+	private float speed;
+	[SerializeField]
+	private Navigable target;
 
-	private float last;
-	private bool active;
+	private float last = 0F;
+	private bool active = false;
 
 	public override void Activate() {
 		active = !active;
 	}
 
-	void Awake() {
-		active = false;
-		last = 0F;
-	}
-
 	void FixedUpdate() {
-		if (active && Time.time > last + rate / 100 - source.GetComponent<Attributes>().agility / 100) {
+		if (active && Time.time > last + rate / 100 - transform.root.GetComponent<Attributes>().agility / 100) {
 			last = Time.time;
 
-			Vector3 force = (target.transform.position - source.transform.position).normalized;
+			Vector3 force = (target.position - transform.position).normalized;
 
 			Quaternion rotation = Quaternion.Euler(0, 0, Mathf.Atan2(force.y, force.x) * Mathf.Rad2Deg);
 
-			GameObject instance = Instantiate(projectile, source.transform.position, rotation) as GameObject;
+			GameObject instance = Instantiate(projectile, transform.position, rotation) as GameObject;
 			instance.GetComponent<Rigidbody2D>().AddForce (force * speed);
 
-			Destroy (instance, range);
+			Destroy (instance, range / 10);
 		}
 	}
 }

@@ -10,7 +10,6 @@ public class AIController : MonoBehaviour {
 	}
 
 	void Start() {
-		attack.target = Util.ClosestGameObjectWithTag(this.gameObject, "Player");
 		attack.Activate();
 	}
 }

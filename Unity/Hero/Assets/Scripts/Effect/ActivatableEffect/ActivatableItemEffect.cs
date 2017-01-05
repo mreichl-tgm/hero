@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class ActivatableItemEffect : ItemEffect {
+public class ActivatableItemEffect : Effect {
 	
 	[SerializeField]
 	private KeyCode trigger;

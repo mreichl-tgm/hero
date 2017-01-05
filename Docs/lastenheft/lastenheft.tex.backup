@@ -1,0 +1,97 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{raleway}
+\usepackage[english]{babel}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[marginal, perpage]{footmisc}
+
+\renewcommand{\thefootnote}{\Roman{footnote}}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=MidnightBlue,
+  urlcolor=MidnightBlue
+}
+
+\title{
+  \textbf{The Hero Project}\\
+  \large{Product Specifications}
+  \linebreak
+  \linebreak
+  \small{\texttt{01001000\\01000101\\01010010\\01001111}}
+}
+
+\author{
+  \begin{tabular}{rl}
+    \textbf{Team:}
+    & \textsc{Djordjevic} Filip\\
+    & \textsc{Reichl} Markus \small{\textit{Product Owner}}\\
+    & \textsc{Tekin} Abdurrahim\\
+    & \textsc{Wellner} Florian\\
+    \\
+    \textbf{Supervision:}
+    & \textsc{Dolezal} Dominik
+  \end{tabular}
+}
+
+\begin{document}
+\begin{titlepage}
+  \clearpage
+  \maketitle
+  \thispagestyle{empty}
+  
+  \begin{abstract}
+    \begin{flushleft}
+      The Hero Project is a \textbf{bullethell roguelike multiplayer RPG} providing a very own storytelling and gameplay experience.
+     \end{flushleft}
+  \end{abstract}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+The Hero Project is a \textbf{bullethell\footnotemark[1] roguelike\footnotemark[2] multiplayer\footnotemark[3] RPG\footnotemark[4]} providing a very own storytelling and gameplay experience.
+
+\footnotetext[1]{A video game sub-genre where the screen is usually covered in bullets.}
+\footnotetext[2]{A video game sub-genre which, based on the \href{http://roguebasin.com/roguelike-definition}{Roguebasin Interpretation}, is defined by 
+  \begin{itemize}
+    \item \textbf{Permanent Failure:} The player is encouraged to take responsibility for the risks he takes.
+    \item \textbf{Procedural Environments:} Most of the game world is generated and provides complexity in resources and other elements of the game.
+    \item \textbf{Resources:} The player can manage a limited amount of resources.
+  \end{itemize}
+  The \href{http://roguebasin.com/roguelike-definition}{Roguebasin}, \href{http://roguebasin.com/index.php?title=Berlin_Interpretation}{Berlin} and \href{http://roguetemple.com/roguelike-definition}{Roguetemple} Interpretation may give a more detailed explaination on this subject.
+}
+\footnotetext[3]{A multiplayer game allows but does not require clients to play together. The Hero Project is not meant to be played online only!}
+\footnotetext[4]{A roleplay game is a game in which the player assumes the roles of characters in a fictional setting and takes responsibility for his acting either thorugh literal acting.}
+
+It is highly inspired by previous titles in the roguelike and roleplay game genres, the most noteworthy being \href{https://realmofthemadgod.com}{Realm of the Mad God}, \href{http://www.devolverdigital.com/games/view/titan-souls}{Titan Souls} and \href{http://dodgeroll.com/gungeon/}{Enter the Gungeon}.
+
+While all mentioned games are using a topdown pixelart setting The Hero Project is drawn in a very unique combination of high and low resolutions.
+
+\section{Project Goals}
+The main goal of The Hero Project as a school project is to create a solid base for a video game ready for further development.
+This base includes all elements listed in the Product Functions and Product Specifications sections.
+
+\section{Product Functions}
+\subsection{/PF10/ Atificial Intelligence}\label{subsec:pf10ai}
+Entities similar to a character\ref{subsec:pf20character} are controlled by the game and interact with their environment including the player.
+\subsection{/PF20/ Character}\label{subsec:pf20character}
+A single client is able to control at least one characters actions and manage his inventory\ref{subsec:pf30inventory}.
+\subsection{/PF21/ Movement}\label{susec:pf21movement}
+The player is able to control his characters movement using the device of his choice.
+\subsection{/PF22/ Item Interaction}\label{subsec:pf22iteminteraction}
+The player is able to interact with items\ref{subsec:pf40items} in his inventory\ref{subsec:pf41inventory} and use their effects\ref{subsec:pf30effects}.
+\subsection{/PF30/ Effects}\label{subsec:pf30effects}
+Game Entities can be given effects which allow them to interact with their environment.
+They can be activated or enabled or interact permanently.
+The most common effects, which is also implemented in the core game, is an attack.
+\subsection{/PF30/ Items}\label{subsec:pf40items}
+
+\subsection{/PF31/ inventory}\label{subsec:pf41inventory}
+\subsection{Movement}
+
+\end{document}

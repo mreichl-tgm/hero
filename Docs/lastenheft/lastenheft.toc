@@ -1,0 +1,11 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Project Goals}{2}{section.2}
+\contentsline {section}{\numberline {3}Product Functions}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}\texttt {/PF10/} Atificial Intelligence}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}\texttt {/PF20/} Character}{3}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}\texttt {/PF21/} Movement}{3}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}\texttt {/PF22/} Item Interaction}{3}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}\texttt {/PF30/} Effects}{3}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}\texttt {/PF30/} Items}{3}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}\texttt {/PF31/} Inventory}{4}{subsection.3.7}
