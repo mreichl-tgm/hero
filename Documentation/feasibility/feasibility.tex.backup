@@ -1,0 +1,124 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{raleway}
+\usepackage[english]{babel}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[marginal, norule, perpage]{footmisc}
+
+\renewcommand{\thefootnote}{\Roman{footnote}}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=MidnightBlue,
+  urlcolor=MidnightBlue
+}
+
+\title{
+  \textbf{The Hero Project}\\
+  \large{Feasibility Study}
+  \linebreak
+  \linebreak
+  \small{\texttt{01001000\\01000101\\01010010\\01001111}}
+}
+
+\author{
+  \begin{tabular}{rl}
+    \textbf{Team:}
+    & \textsc{Djordjevic} Filip\\
+    & \textsc{Reichl} Markus \small{\textit{(Project Manager}}\\
+    & \textsc{Tekin} Abdurrahim\\
+    & \textsc{Wellner} Florian\\
+    \\
+    \textbf{Supervision:}
+    & \textsc{Dolezal} Dominik
+  \end{tabular}
+}
+
+\begin{document}
+\begin{titlepage}
+  \clearpage
+  \maketitle
+  \thispagestyle{empty}
+  
+  \begin{abstract}
+    \begin{flushleft}
+      The Hero Project is a \textbf{bullethell roguelike multiplayer RPG} providing a very unique storytelling and gameplay experience.
+      
+      Its main goal as a school project is to create a solid base for a video game ready for further development. The core should be highly abstract, stable and easy to extend.
+      \linebreak
+      \linebreak
+      This document goes into detail with the projects technical feasibility and reviews different approaches resulting into a clear conclusion and the best way to go.
+     \end{flushleft}
+  \end{abstract}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+The Hero Project is a \textbf{
+  bullethell
+  \footnote{A video game sub-genre where the screen is usually covered in bullets.}
+  roguelike
+  \footnote{A video game sub-genre which, based on the \href{http://roguebasin.com/roguelike-definition}{Roguebasin Interpretation}, is defined by 
+    \begin{itemize}
+      \item \textbf{Permanent Failure:} The player is encouraged to take responsibility for the risks he takes.
+      \item \textbf{Procedural Environments:} Most of the game world is generated and provides complexity in resources and other elements of the game.
+      \item \textbf{Resources:} The player can manage a limited amount of resources.
+    \end{itemize}
+    The \href{http://roguebasin.com/roguelike-definition}{Roguebasin}, \href{http://roguebasin.com/index.php?title=Berlin_Interpretation}{Berlin} and \href{http://roguetemple.com/roguelike-definition}{Roguetemple} Interpretation may give a more detailed explaination on this subject.
+  }
+  multiplayer
+  \footnote{A multiplayer game allows but does not require clients to play together. The Hero Project is not meant to be played online only!}
+  RPG\footnote{A roleplay game is a game in which the player assumes the roles of characters in a fictional setting and takes responsibility for his acting either thorugh literal acting.}
+} providing a very unique storytelling and gameplay experience.
+
+It is highly inspired by previous titles in the roguelike and roleplay game genres, the most noteworthy being \href{https://realmofthemadgod.com}{Realm of the Mad God}, \href{http://www.devolverdigital.com/games/view/titan-souls}{Titan Souls} and \href{http://dodgeroll.com/gungeon/}{Enter the Gungeon}.
+
+While all mentioned games are using a topdown pixelart setting The Hero Project is drawn in a very unique combination of high and low resolutions.
+
+\section{Project Goals}
+The main goal of The Hero Project as a school project is to create a solid base for a video game ready for further development.
+This base includes all elements listed in the \textit{Functional Requirements} and \textit{Technical Requirements} sections found in the \textit{Requirement Specification} document.
+Because The Hero Project as a school project only has to provide the core of the game there is no need to review the economic or legal feasibility.
+
+\newpage
+
+\section{Technical Feasibility}
+With a video game being an enormous software project this study is mostly technical which requires the reader to have at least basic knowledge about video games and software development.
+Technical terms will still be explained as footnotes at the bottom of each page.
+
+\subsection{Team}
+Because the majority of the product will be developed by a rather small team each members technical experience and skill has a huge influence on the projects schedule and quality.
+The Hero Projects core as a school project is developed by a static team of 4 members and 1 professor listed below.
+\paragraph{\textsc{Djordjevic} Filip} ~\\
+\begin{tabular}{ll}
+\texttt{Roles} & Sounddesigner\\
+\texttt{Areas of expertise} & Music and Sounddesign
+\end{tabular}
+\paragraph{\textsc{Reichl} Markus} ~\\
+\begin{tabular}{ll}
+\texttt{Roles} & Project Manager \textit{\small{Product Owner)}}\\
+\texttt{Areas of expertise} & Concept Art and System Architecture
+\end{tabular}
+\paragraph{\textsc{Tekin} Abdurrahim} ~\\
+\begin{tabular}{ll}
+\texttt{Roles} & Artist\\
+\texttt{Areas of expertise} & Art and Design
+\end{tabular}
+\paragraph{\textsc{Wellner} Florian} ~\\
+\begin{tabular}{ll}
+\texttt{Roles} & Software Developer\\
+\texttt{Areas of expertise} & Software Development
+\end{tabular}
+\paragraph{\textsc{Dolezal} Dominik} ~\\
+\begin{tabular}{ll}
+\texttt{Roles} & Professor \textit{\small{(Supervisor)}}\\
+\texttt{Areas of expertise} & Software Development
+\end{tabular}
+While providing a wide variety of skills the team is also well attuned and 
+
+\end{document}
