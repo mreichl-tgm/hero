@@ -94,7 +94,7 @@ A single client is able to control at least one characters actions and manage it
 \subsection{\texttt{/FR21/} Movement}\label{subsec:fr21movement}
 The player is able to control his characters movement using an input of his choice.
 \subsection{\texttt{/FR22/} Levelling}\label{subsec:fr22levelling}
-A \hyperref[subsec:fr20character]{Character} is able to gain levels which directly modify his \hyperref[subsec:fr50attributes]{Attributes} and also affect AIs like enemies, most likely by modifying their Attributes, Spawnrate\footnote{Entities created in a limited amount of time} or \hyperref[subsec:fr40items]{Items} dropped.
+A \hyperref[subsec:fr20character]{Character} is able to gain levels which directly modify his \hyperref[subsec:fr50attributes]{Attributes} and also 
 \subsection{\texttt{/FR30/} Effects}\label{subsec:fr30effects}
 Game Entities can be given effects which allow them to interact with their environment.
 They can be activated or enabled or interact permanently.
@@ -120,9 +120,6 @@ The game should run on multiple platforms including all major desktop operating 
 Being only a core also implies that it will be extended which requires at least a modular pattern.
 \subsection{\texttt{/TR30/} Scalable}
 The core game has to be highly scaleable which requires it to be abstract, decoupled and easy to maintain.
-\subsection{\texttt{/TR40/} Multiplayer Ready}
-Because the actual game is thought to be played on a server with multiple clients the core has to be ready.
-A real multiplayer is not necessary but should be easy to implement later on, which requires the code to be designed for multiple clients.
 
 \section{Quality}
 Extendability and functionality are high priority for the core game because of their huge influence on the later game.
