@@ -65,3 +65,4 @@ def calculate(file):
 
 if __name__ == "__main__":
     LogReader(sys.argv)
+    input("")

@@ -1,3 +1,4 @@
+import getpass
 import re
 import subprocess
 
@@ -49,7 +50,7 @@ class Wiki(Repository):
             if len(args) > 4:
                 password = args[4]
             else:
-                password = input("Password: ")
+                password = getpass.getpass()
 
             source = source.replace("https://", "")
             self.source = "https://" + username + ":" + password + "@" + source

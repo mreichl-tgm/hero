@@ -1,0 +1,10 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Project Goals}{2}{section.2}
+\contentsline {section}{\numberline {3}Technical Feasibility}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Team}{3}{subsection.3.1}
+\contentsline {paragraph}{\textsc {Djordjevic} Filip}{3}{section*.2}
+\contentsline {paragraph}{\textsc {Reichl} Markus}{3}{section*.3}
+\contentsline {paragraph}{\textsc {Tekin} Abdurrahim}{3}{section*.4}
+\contentsline {paragraph}{\textsc {Wellner} Florian}{3}{section*.5}
+\contentsline {paragraph}{\textsc {Dolezal} Dominik}{3}{section*.6}
