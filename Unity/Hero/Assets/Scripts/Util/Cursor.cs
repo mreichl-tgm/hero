@@ -5,7 +5,8 @@ namespace Hero.Util {
 
 		public override Vector3 position {
 			get {
-				Vector3 mousePosition = Camera.main.WorldToScreenPoint(Input.mousePosition);
+				Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+				Debug.Log (mousePosition);
 				return new Vector3(mousePosition.x, mousePosition.y, 0);
 			}
 		}

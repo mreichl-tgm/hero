@@ -16,7 +16,7 @@ public class AISpawner : MonoBehaviour {
 		if (Time.time > last + spawnRate / 100) {
 			last = Time.time;
 
-			Instantiate(targets [Random.Range(0, targets.Length - 1)], spawnPoint, Quaternion.identity);
+			Instantiate(targets [Random.Range(0, targets.Length)], spawnPoint, Quaternion.identity);
 		}
 	}
 }
