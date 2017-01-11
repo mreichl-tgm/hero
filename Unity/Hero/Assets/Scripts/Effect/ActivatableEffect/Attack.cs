@@ -15,14 +15,10 @@ public class Attack : ActivatableEffect {
 	private Navigable target;
 
 	private float last = 0F;
-	private bool active = false;
 
 	public override void Activate() {
-		active = !active;
-	}
 
-	void FixedUpdate() {
-		if (active && Time.time > last + rate / 100 - transform.root.GetComponent<Attributes>().agility / 100) {
+		if (Time.time > last + rate / 100 - transform.root.GetComponent<Attributes>().agility / 100) {
 			last = Time.time;
 
 			Vector3 force = (target.position - transform.position).normalized;
