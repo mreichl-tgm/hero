@@ -1,6 +1,9 @@
 ## Astah
 *.lock
 
+## Documentation
+*.aux
+
 ## JetBrains
 .idea
 
@@ -46,3 +49,6 @@ sysinfo.txt
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+## Pycache
+__pycache__

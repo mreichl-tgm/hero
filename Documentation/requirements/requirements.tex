@@ -88,13 +88,13 @@ This base includes all elements listed in the \hyperref[sec:fr]{Functional Requi
 
 \section{Functional Requirements}\label{sec:fr}
 \subsection{\texttt{/FR10/} Artificial Intelligence}\label{subsec:fr10ai}
-Entities\footnote{Every interacting object in the game is referred to as a (game) entity} similar to a \hyperref[subsec:fr20character]{character} are controlled by the game and interact with their environment by using \hyperref[subsec:fr30effects]{Effects}.
+Entities\footnote{Every interacting object in the game is referred to as a (game) entity} similar to a \hyperref[subsec:fr20character]{character} are controlled by the game and interact with their environment by using \hyperref[subsec:fr30effects]{effects}.
 \subsection{\texttt{/FR20/} Character}\label{subsec:fr20character}
 A single client is able to control at least one characters actions and manage its \hyperref[subsec:fr41inventory]{inventory}.
 \subsection{\texttt{/FR21/} Movement}\label{subsec:fr21movement}
 The player is able to control his characters movement using an input of his choice.
 \subsection{\texttt{/FR22/} Levelling}\label{subsec:fr22levelling}
-A \hyperref[subsec:fr20character]{Character} is able to gain levels which directly modify his \hyperref[subsec:fr50attributes]{Attributes} and also affect AIs like enemies, most likely by modifying their Attributes, Spawnrate\footnote{Entities created in a limited amount of time} or \hyperref[subsec:fr40items]{Items} dropped.
+A \hyperref[subsec:fr20character]{Character} is able to gain levels which directly modify his \hyperref[subsec:fr50attributes]{attributes} and also affect AIs like enemies, most likely by modifying their Attributes, Spawnrate\footnote{Entities created in a limited amount of time} or \hyperref[subsec:fr40items]{items} dropped.
 \subsection{\texttt{/FR30/} Effects}\label{subsec:fr30effects}
 Game Entities can be given effects which allow them to interact with their environment.
 They can be activated or enabled or interact permanently.
@@ -117,10 +117,8 @@ While providing a huge amount of complexity the game also requires clarity for t
 \subsection{\texttt{/TR10/} Cross-Platform}
 The game should run on multiple platforms including all major desktop operating systems and popular consoles.
 \subsection{\texttt{/TR20/} Extendable}
-Being only a core also implies that it will be extended which requires at least a modular pattern.
-\subsection{\texttt{/TR30/} Scalable}
-The core game has to be highly scaleable which requires it to be abstract, decoupled and easy to maintain.
-\subsection{\texttt{/TR40/} Multiplayer Ready}
+Being only a core also implies that it will be extended which requires it to be abstract, decoupled and easy to maintain.
+\subsection{\texttt{/TR30/} Multiplayer Ready}
 Because the actual game is thought to be played on a server with multiple clients the core has to be ready.
 A real multiplayer is not necessary but should be easy to implement later on, which requires the code to be designed for multiple clients.
 

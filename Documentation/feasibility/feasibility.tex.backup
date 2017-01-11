@@ -78,12 +78,28 @@ The Hero Project is a \textbf{
 
 It is highly inspired by previous titles in the roguelike and roleplay game genres, the most noteworthy being \href{https://realmofthemadgod.com}{Realm of the Mad God}, \href{http://www.devolverdigital.com/games/view/titan-souls}{Titan Souls} and \href{http://dodgeroll.com/gungeon/}{Enter the Gungeon}.
 
-While all mentioned games are using a topdown pixelart setting The Hero Project is drawn in a very unique combination of high and low resolutions.
+While all mentioned games are using a topdown pixelart setting, the Hero Project is drawn in a very unique combination of high and low resolutions.
+
+\newpage
 
 \section{Project Goals}
 The main goal of The Hero Project as a school project is to create a solid base for a video game ready for further development.
-This base includes all elements listed in the \textit{Functional Requirements} and \textit{Technical Requirements} sections found in the \textit{Requirement Specification} document.
-Because The Hero Project as a school project only has to provide the core of the game there is no need to review the economic or legal feasibility.
+This base includes all elements listed in the \textit{Functional} and \textit{Technical Requirements} sections found in the \textit{Requirement Specification} document.
+Because The Hero Project as a school project only has to provide the core of the game there is only little need to review the economic or legal feasibility.
+
+\subsection{Targets}
+Before development can start the aim of the project has to be as clear as possible. Therefore the following targets and non-targets have been declared.
+\paragraph{Targets}
+\begin{itemize}
+ \item A core game ready for further development including all Functional and Technical Requirements.
+ \item A prototype for presentation
+\end{itemize}
+
+\paragraph{Non Targets}
+\begin{itemize}
+ \item A full game
+ \item A demo version
+\end{itemize}
 
 \newpage
 
@@ -101,7 +117,7 @@ The Hero Projects core as a school project is developed by a static team of 4 me
 \end{tabular}
 \paragraph{\textsc{Reichl} Markus} ~\\
 \begin{tabular}{ll}
-\texttt{Roles} & Project Manager \textit{\small{Product Owner)}}\\
+\texttt{Roles} & Project Manager \textit{\small{(Product Owner)}}\\
 \texttt{Areas of expertise} & Concept Art and System Architecture
 \end{tabular}
 \paragraph{\textsc{Tekin} Abdurrahim} ~\\
@@ -119,6 +135,93 @@ The Hero Projects core as a school project is developed by a static team of 4 me
 \texttt{Roles} & Professor \textit{\small{(Supervisor)}}\\
 \texttt{Areas of expertise} & Software Development
 \end{tabular}
-While providing a wide variety of skills the team is also well attuned and 
+\\
+\\
+\\
+While providing a wide variety of skills the majority of the team is also well attuned. Everyone has at least some experience with video games but only a few have already worked on one.
+
+\subsection{Requirement Analysis}
+The following section analyses all Functional and Technical requirements found in the Requirements Specification document and gives some short information about the teams thoughts on their technical feasibility.
+
+\subsubsection{Functional Requirements}
+\paragraph{Artificial Intelligence}~\\
+AIs are basically characters controlled by the game, which means that an AI differs from a character only by his controlling unit.
+\paragraph{Character}~\\
+A character, according to the Requirements Specification document, defines an entity controlled by the player.
+It should be able to move, take actions and carry an inventory. The first two depend directly on the users input, which is hard to keep platform independent assuming that the game is not using another engine.
+Implementing a levelling system for the player which interacts with a characters attributes should not be a problem.
+\paragraph{Effects}~\\
+In order to keep the core clean while adding lots of new features to the game effects have to be abstract and highly encapsulated. They should not depend on the identity of their owning entity and therefore work out of the box.
+A decoupling pattern called the Component Pattern can be used to manage multiple effects and keep the game extendable. Most popular engines also rely on this pattern.
+\paragraph{Items}~\\
+In order to story items for multiple players at least some kind of a database is required. There are multiple solutions for this problem, lots of game engines even bring their own database implementations.
+Items also have to be store- and even equipable by the player which makes them great candidates to hold effects the player can activate. Items should only usable by the player because they only interact through their effects which also covers the requirement \textit{Item Interaction}. 
+This is possible because all other entities use effects as components directly.
+\paragraph{Attributes}~\\
+Attributes are simple values and can easily be interacted with.
+They should also be treated like components and not be restricted to characters only.
+
+\subsubsection{Technical Requirements}
+\paragraph{Cross-Platform}~\\
+Cross-Platform is hard to guarantee while not using an engine which is designed for multiple devices. Most programming languages nowadays can be used on any popular operating systems which at least fits the requirements.
+Using an engine would allow the game to be ported to more platforms including consoles, smartphones and tablets.
+\paragraph{Extendable}~\\
+In order to keep the core extendable abstraction and decoupling are really important. All parts of the game have to work independently including later extentions.
+\paragraph{Multiplayer Ready}~\\
+Assuming a server while developing the core is not as easy as it seems but possible when considered from the start.
+Here too an engine can help and improve the project lot.
+
+\subsubsection{Conclusion}
+The development process is quite intense and might not fit the schedule when every part of the game is hard coded. The team suggests using a framework which already provides essential components.
+Possible candidates are engines like Gamemaker and \hyperref[subsubsec:unity]{Unity} or frameworks like \hyperref[subsubsec:monogame]{Monogame} or \hyperref[subsubsec:vulkan]{Vulkan}.
+
+\subsection{Engines and Frameworks}
+Because of the volume of this project the team highly recommends using an engine which already provides key elements and can be easily extended.
+After comparing lots of possible options the team decided on 3 major possibilities.
+
+\subsubsection{Monogame}\label{subsubsec:monogame}
+Monogame is a framework
+\subsubsection{Unity}\label{subsubsec:unity}
+\subsubsection{Vulkan}\label{subsubsec:vulkan}
+
+
+\section{Economic Feasibility}
+Although the core game itself is not sold to any userbase the team did some research and gathered information about the market.
+Right now there are many unknown and few popular bullethell roguelikes available including the four mentioned in the previous documents.
+
+\subsection{Market Research}
+A comparision of those games, their players and economics, can be found below. All information was gathered on the 26th September of 2016.
+
+\paragraph{Realm of the Mad God}~\\
+Realm of the Mad God, or ROTMG for short, is a bullethell MMORPG\footnote{A massively multiplayer online role-playing game is a story-driven online video game in which a player interacts with a large number of other players.} currently played by 1.7 billion accounts.
+It is free to play and makes profit from ingame transactions which brought in 1.36 billion Euros in total since 2011.\\
+While the game still has a high userbase a lot of players actually wish for a better game.
+
+\paragraph{Titan Souls}~\\
+Titan Souls is a roguelike RPG released in 2015. Since then it gathered 170 thousand players and acquired 1.65 billion Euros in total. It is available on steam for 14.99 Euros at the moment.
+
+\paragraph{Dungeon Souls}~\\
+Dungeon Souls is also a bullethell roguelike RPG released in 2015 and counts about 35 thousand players. It was developed by a indie studio and is now available on steam for 12.99 Euros which is quite a lot for this genre. 
+The game gathered 300 thousand Euros since its release.
+
+\paragraph{Enter the Gungeon}~\\
+Another bullethell roguelike RPG released in 2016 with a great art style and a huge userbase of 414 thousand players which is quite a lot for an indie game. 
+It is now sold for 14.99 Euros and gathered 4.095 billion Euros since its release.
+
+\subsubsection{Conclusion}
+The information gathered while researching for these games shows lots of possibilities but also sets high quality standards. 
+There are many small indie developers in this genre but only few who rise to the top mostly because of their creativity or storytelling.
+
+\section{Schedule Feasibility}
+Time is a very important factor in this project because it can become very consuming and may even take too long to be completed.
+Due to the size of the team a single member can influence the schedule a lot.
+\\
+\\
+Important milestones are the \textbf{protoype deadline} and the \textbf{project approval} on the 17th December of 2017 which gives the team a hundred days, excluding sun- and holidays, to provide the required specifications.
+
+Although a hundred days would be quite enough while working 40 hours per week the team only has a regular worktime of 4 hours a week what leads to 60 hours per person which definitely is not enough to complete the project without a framework.
+
+\section{Conclusion}
+
 
 \end{document}
