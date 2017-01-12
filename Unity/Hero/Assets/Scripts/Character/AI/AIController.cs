@@ -9,7 +9,7 @@ public class AIController : MonoBehaviour {
 		attack = GetComponent<Attack>();
 	}
 
-	void Start() {
+	void FixedUpdate() {
 		attack.Activate();
 	}
 }

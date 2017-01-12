@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\Item\ItemModel.cs" />
      <Compile Include="Assets\Scripts\Item\ItemSlot.cs" />
      <Compile Include="Assets\Scripts\Item\ItemType.cs" />
+     <Compile Include="Assets\Scripts\Util\ClosestGameObjectWithTag.cs" />
      <Compile Include="Assets\Scripts\Util\Cursor.cs" />
      <Compile Include="Assets\Scripts\Util\Navigable.cs" />
      <Compile Include="Assets\Scripts\Util\Util.cs" />

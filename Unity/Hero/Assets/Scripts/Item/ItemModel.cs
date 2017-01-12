@@ -6,4 +6,6 @@ public class ItemModel : MonoBehaviour {
 	private ItemType type;
 	[SerializeField]
 	private string description;
+
+	public int damage;
 }
