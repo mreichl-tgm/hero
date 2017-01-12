@@ -180,10 +180,18 @@ Because of the volume of this project the team highly recommends using an engine
 After comparing lots of possible options the team decided on 3 major possibilities.
 
 \subsubsection{Monogame}\label{subsubsec:monogame}
-Monogame is a framework
-\subsubsection{Unity}\label{subsubsec:unity}
-\subsubsection{Vulkan}\label{subsubsec:vulkan}
+Monogame is an open-source framework based on Microsofts XNA-4\footnote{XNA Is Not Acronymed is a video game framework developed by microsoft}. It provides cross-platform support and is optimized for 2D.
+Popular games using Monogame include the indie game \href{http://store.steampowered.com/app/224760/}{FEZ}.
 
+It allows but also requires the developer to write critical game code and is very lightweight.
+\subsubsection{Unity}\label{subsubsec:unity}
+Unity is a huge game engine and built for 3D games while also providing 2D support. It comes with a lot of features and a solid framework for both newbies and professional game developers.
+Lots of popular games were developed in Unity recently including \href{http://www.oriblindforest.com}{Ori And The Blind Forest}, \href{https://playrust.com}{Rust} and one game also found in the Requirement Specification document \href{http://dodgeroll.com/gungeon/}{Enter the Gungeon}.
+\subsubsection{Vulkan}\label{subsubsec:vulkan}
+Vulkan is the next level of OpenGL released in 2016. Using Vulkan basically means working from scratch. It allows the user to work very close to the computers hardware and offers a lot of possibilities not found in OpenGL.
+\subsubsection{Conclusion}
+Comparing all these engines and frameworks the team got really excited looking at the games running on Unity and its amazing features which would otherwise be really hard to implement. 
+While Monogame and Vulkan give the developer a lot of freedom, Unity gives a whole swiss army knife. Looking at the teams schedule and the features the project needs Unity seems to be a great option and maybe the only option.
 
 \section{Economic Feasibility}
 Although the core game itself is not sold to any userbase the team did some research and gathered information about the market.
@@ -222,6 +230,6 @@ Important milestones are the \textbf{protoype deadline} and the \textbf{project 
 Although a hundred days would be quite enough while working 40 hours per week the team only has a regular worktime of 4 hours a week what leads to 60 hours per person which definitely is not enough to complete the project without a framework.
 
 \section{Conclusion}
-
+All features required by the previous document are viable and can be completed in time even though the development process will might become very intense.
 
 \end{document}
