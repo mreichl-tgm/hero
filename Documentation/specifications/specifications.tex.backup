@@ -1,0 +1,150 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{raleway}
+\usepackage[english]{babel}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[marginal, norule, perpage]{footmisc}
+\usepackage{microtype}
+
+\renewcommand{\thefootnote}{\Roman{footnote}}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=MidnightBlue,
+  urlcolor=MidnightBlue
+}
+
+\title{
+  \textbf{The Hero Project}\\
+  \large{Functional Specification}
+  \linebreak
+  \linebreak
+  \small{\texttt{01001000\\01000101\\01010010\\01001111}}
+}
+
+\author{
+  \begin{tabular}{rl}
+    \textbf{Team:}
+    & \textsc{Djordjevic} Filip\\
+    & \textsc{Reichl} Markus \small{\textit{(Project Manager)}}\\
+    & \textsc{Tekin} Abdurrahim\\
+    & \textsc{Wellner} Florian\\
+    \\
+    \textbf{Supervision:}
+    & \textsc{Dolezal} Dominik
+  \end{tabular}
+}
+
+\begin{document}
+\begin{titlepage}
+  \clearpage
+  \maketitle
+  \thispagestyle{empty}
+  
+  \begin{abstract}
+    \begin{flushleft}
+      The Hero Project is a \textbf{bullethell roguelike multiplayer RPG} providing a very unique storytelling and gameplay experience.
+      
+      Its main goal as a school project is to create a solid base for a video game ready for further development. The core should be highly abstract, stable and easy to extend.
+      \linebreak
+      \linebreak
+      This document defines all features the product has to provide, as a response to the \textit{Requirement Specification} document, using the results of the teams \textit{Feasibility Study}.
+     \end{flushleft}
+  \end{abstract}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+The Hero Project is a \textbf{
+  bullethell
+  \footnote{A video game sub-genre where the screen is usually covered in bullets.}
+  roguelike
+  \footnote{A video game sub-genre which, based on the \href{http://roguebasin.com/roguelike-definition}{Roguebasin Interpretation}, is defined by 
+    \begin{itemize}
+      \item \textbf{Permanent Failure:} The player is encouraged to take responsibility for the risks he takes.
+      \item \textbf{Procedural Environments:} Most of the game world is generated and provides complexity in resources and other elements of the game.
+      \item \textbf{Resources:} The player can manage a limited amount of resources.
+    \end{itemize}
+    The \href{http://roguebasin.com/roguelike-definition}{Roguebasin}, \href{http://roguebasin.com/index.php?title=Berlin_Interpretation}{Berlin} and \href{http://roguetemple.com/roguelike-definition}{Roguetemple} Interpretation may give a more detailed explanation on this subject.
+  }
+  multiplayer
+  \footnote{A multiplayer game allows but does not require clients to play together. The Hero Project is not meant to be played online only!}
+  RPG\footnote{A roleplay game is a game in which the player assumes the roles of characters in a fictional setting and takes responsibility for his acting either through literal acting.}
+} providing a very unique storytelling and gameplay experience.
+
+It is highly inspired by previous titles in the roguelike and roleplay game genres, the most noteworthy being \href{https://realmofthemadgod.com}{Realm of the Mad God}, \href{http://www.devolverdigital.com/games/view/titan-souls}{Titan Souls} and \href{http://dodgeroll.com/gungeon/}{Enter the Gungeon}.
+
+While all mentioned games are using a topdown pixelart setting, the Hero Project is drawn in a very unique combination of high and low resolutions.
+
+\section{Project Goals}
+The main goal of The Hero Project as a school project is to create a solid base for a video game ready for further development.
+This base includes all elements listed in the \hyperref[sec:fs]{Functional} and \hyperref[sec:ts]{Technical} Specifications sections found later in this document.
+
+\subsection{Targets}
+\paragraph{Targets}
+The team is going to provide a core game as mentioned earlier and also a prototype for presentation.
+\paragraph{Non Targets}
+The team is not thought to provide a demo version or even a complete game.
+
+\newpage
+
+\section{Functional Specifications}\label{sec:fs}
+\subsection{\texttt{/FS10/} Artificial Intelligence}\label{subsec:fs10ai}
+Entities\footnote{Every interacting object in the game is referred to as a (game) entity} similar to a \hyperref[subsec:fs20character]{character} and controlled by the game can interact with their environment by using \hyperref[subsec:fs30effects]{effects}.
+The game itself will differentiate between two main types of AIs, NPCs\footnote{A non player character is a character which is not controlled by the player} and Enemies, for most of the time.
+\subsubsection{NPC}
+NPCs may interact with the player through conversation or providing resources.
+\subsubsection{Enemy}
+While NPCs are most likely to be friendly enemies will use their effects to harm the \hyperref[subsec:fs60player]{player}.
+They can also be used to provide \hyperref[subsec:fs41items]{items} and other \hyperref[subsec:fs40resources]{resources} for the player, when an enemy is killed by a attack controlled by the player.
+\subsubsection{Other AIs}
+AIs different from NPCs and enemies could be objects provided by the environment which interact with the player by using effects.
+\subsection{\texttt{/FS20/} Character}\label{subsec:fs20character}
+Characters are entities which are directly controlled by the client or the game. Every character has the ability to \hyperref[subsec:fs21movement]{move}, \hyperref[subsec:fs22levelling]{level}, use \hyperref[subsec:fs30effects]{effects} and relies on \hyperref[subsec:fs50attributes]{attributes}.
+\subsection{\texttt{/FS21/} Movement}\label{subsec:fs21movement}
+The characters movement can be controlled by the game or the client using an input of his input of choice.
+\subsection{\texttt{/FS22/} Levelling}\label{subsec:fs22levelling}
+A \hyperref[subsec:fr20character]{character} is able to gain levels which directly modify its \hyperref[subsec:fs50attributes]{attributes}. 
+Attributes can also influence AIs, mostly by modifying their attributes, spawn rates\footnote{Entities created in a limited amount of time} or resources.
+Levels can be given by default or increase on specific actions. Common ways for the player to improve his level includes fighting enemies or completing quests\footnote{A search or pursuit made in order to find or obtain something. In this case a quest describes a task for the player to complete.}.
+\subsection{\texttt{/FS30/} Effects}\label{subsec:fs30effects}
+Entities can be given effects which allow them to interact with their environment.
+They can be activated, enabled or interact permanently. Common effects include \hyperref[subsec:fs50attributes]{attribute} manipulation, conversations and also attacks.
+\hyperref[subsec:fr60player]{Players} should also be able the control their effects using an input of their choice.
+\subsection{\texttt{/FS40/} Resources}\label{subsec:fs40resources}
+Resources are all collectable objects in the game. They do not interact themselves but can be interacted with by a character through his \hyperref[subsec:fs42inventory]{inventory}.
+\subsection{\texttt{/FS41/} Items}\label{subsec:fs41items}
+Items are resources that can be given \hyperref[subsec:fs30effects]{effects}, which can only be activated by another entity. 
+They should also be ready to be displayed to the player although this feature will not be implemented in the core game.
+\subsection{\texttt{/FS42/} Inventory}\label{subsec:fs42inventory}
+An inventory keeps a limited amount of items and can hold base items, equipment and other resources.
+\subsection{\texttt{/FR50/} Attributes}\label{subsec:fs50attributes}
+All entities using this functionality are influenced by 8 attributes called \textit{health, mana, damage, defence, vitality, wisdom, speed} and \textit{agility}. 
+Their values are used as variables in the entities actions and can also be modified. The number of attributes can also be increased during development.
+Attributes in the core game have to be accessible but not yet interactable for an AI.
+\subsection{\texttt{/FR60/} Player}\label{subsec:fs60player}
+A single client is able to control at least one characters actions and manage its \hyperref[subsec:fs40resources]{resources}.
+
+\section{Usability Specifications}\label{sec:us}
+\subsection{\texttt{/US10/} Minimalist User Interface}
+While providing a huge amount of complexity the game also provides clarity for the user using a minimalist user interface. This improves the usability a lot and makes the game more enjoyable for the player.
+
+\section{Technical Specifications}\label{sec:ts}
+\subsection{\texttt{/TS10/} Cross-Platform}
+The game runs on multiple platforms including all major desktop operating systems and popular consoles using the cross-platform features of the Unity game engine.
+\subsection{\texttt{/TS20/} Extendable}
+The core game will be highly extendable through abstraction, decoupling and maintainability.
+\subsection{\texttt{/TS30/} Multiplayer Ready}
+Because the actual game is thought to be played on a server with multiple clients the core is developed ready for multiple clients.
+A real multiplayer is not necessary in the core game but definitely nice to have.
+
+\section{Quality}
+Extendability and functionality are high priority for the core game because of their huge influence on the later game.
+High quality graphics are only required for presentation and are therefore considered low priority.
+
+\end{document}
