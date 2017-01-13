@@ -2,8 +2,8 @@
 
 namespace Util {
 	public static class Util {
-		public static GameObject ClosestGameObjectWithTag(GameObject source, string tag) {
-			
+		public static GameObject ClosestGameObjectWithTag(GameObject source, string tag)
+		{
 			GameObject[] targets = GameObject.FindGameObjectsWithTag(tag);
 			GameObject closest = null;
 

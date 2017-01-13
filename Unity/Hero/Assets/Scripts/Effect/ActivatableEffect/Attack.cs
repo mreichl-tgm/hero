@@ -3,8 +3,9 @@ using Util;
 
 namespace Effect.ActivatableEffect
 {
-    public class Attack : ActivatableEffect {
-	
+    [RequireComponent(typeof(Attributes))]
+    public class Attack : ActivatableEffect
+    {
         [SerializeField]
         private GameObject _projectile;
         [SerializeField]
@@ -19,7 +20,6 @@ namespace Effect.ActivatableEffect
         private float _last;
 
         public override void Activate() {
-
             if (Time.time > _last + _rate / 100 - transform.root.GetComponent<Attributes>().Agility / 100) {
                 _last = Time.time;
 

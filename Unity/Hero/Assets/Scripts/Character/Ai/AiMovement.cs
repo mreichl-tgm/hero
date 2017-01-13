@@ -2,20 +2,20 @@
 
 namespace Character.Ai
 {
-    public class AiMovement : MonoBehaviour {
-	
-        private Rigidbody2D _rb2D;
+    [RequireComponent(typeof(Attributes))]
+    public class AiMovement : Movement
+    {
+        [SerializeField]
+        private string _targetTag;
+
         private GameObject _target;
 
-        void Awake() {
-            _rb2D = GetComponent<Rigidbody2D>();
-        }
-
         void FixedUpdate () {
-            _target = Util.Util.ClosestGameObjectWithTag(this.gameObject, "Player");
+            _target = Util.Util.ClosestGameObjectWithTag(gameObject, _targetTag);
 
             Vector3 force = (_target.transform.position - transform.position).normalized;
-            _rb2D.velocity = new Vector2(force.x, force.y) * GetComponent<Attributes>().Speed;
+
+            Rb2D.velocity = new Vector2(force.x, force.y) * GetComponent<Attributes>().Speed;
         }
     }
 }

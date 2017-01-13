@@ -2,23 +2,23 @@
 
 namespace Character.Ai
 {
-    public class AiSpawner : MonoBehaviour {
-
+    public class AiSpawner : Movement
+    {
         [SerializeField]
-        private GameObject[] _targets;
+        private GameObject[] _spawnedAis;
         [SerializeField]
         private float _spawnRate;
 
         private Vector3 _spawnPoint;
-        private float _last;
+        private float _nextSpawn;
 
         void FixedUpdate() {
             _spawnPoint = transform.position;
 
-            if (Time.time > _last + _spawnRate / 100) {
-                _last = Time.time;
+            if (Time.time > _nextSpawn + _spawnRate / 100) {
+                _nextSpawn = Time.time;
 
-                Instantiate(_targets [Random.Range(0, _targets.Length)], _spawnPoint, Quaternion.identity);
+                Instantiate(_spawnedAis[Random.Range(0, _spawnedAis.Length)], _spawnPoint, Quaternion.identity);
             }
         }
     }

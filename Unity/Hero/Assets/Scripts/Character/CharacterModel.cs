@@ -2,7 +2,8 @@
 
 namespace Character
 {
-    public class CharacterModel : MonoBehaviour {
-	
+    public class CharacterModel : MonoBehaviour
+    {
+        private string _name;
     }
 }

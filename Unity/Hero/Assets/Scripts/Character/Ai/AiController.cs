@@ -3,16 +3,21 @@ using UnityEngine;
 
 namespace Character.Ai
 {
-    public class AiController : MonoBehaviour {
-	
-        private Attack _attack;
+    [RequireComponent(typeof(AiModel))]
+    public class AiController : MonoBehaviour
+    {
+        private AiModel _model;
+        private Attack[] _attacks;
 
         void Awake() {
-            _attack = GetComponent<Attack>();
+            _attacks = GetComponents<Attack>();
         }
 
         void FixedUpdate() {
-            _attack.Activate();
+            foreach (Attack attack in _attacks)
+            {
+                attack.Activate();
+            }
         }
     }
 }

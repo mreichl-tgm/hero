@@ -2,8 +2,8 @@
 
 namespace Item
 {
-    public class ItemModel : MonoBehaviour {
-	
+    public class ItemModel : MonoBehaviour
+    {
         [SerializeField]
         private ItemType _type;
         [SerializeField]

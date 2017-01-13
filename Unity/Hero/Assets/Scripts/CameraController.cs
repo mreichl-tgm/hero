@@ -3,14 +3,14 @@
 public class CameraController : MonoBehaviour {
 	
     [SerializeField]
-    private GameObject target;
-    private Vector3 offset;
+    private GameObject _target;
+    private Vector3 _offset;
 
     void Start() {
-        offset = transform.position - target.transform.position;
+        _offset = transform.position - _target.transform.position;
     }
 
     void LateUpdate() {
-        transform.position = target.transform.position + offset;
+        transform.position = _target.transform.position + _offset;
     }
 }

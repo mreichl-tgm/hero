@@ -1,7 +1,7 @@
 ﻿namespace Effect.ActivatableEffect
 {
-    public interface IActivatable {
-
+    public interface IActivatable
+    {
         void Activate();
     }
 }

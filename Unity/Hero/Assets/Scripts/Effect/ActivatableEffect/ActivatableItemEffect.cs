@@ -2,8 +2,8 @@
 
 namespace Effect.ActivatableEffect
 {
-    public class ActivatableItemEffect : Effect {
-	
+    public class ActivatableItemEffect : Effect
+    {
         [SerializeField]
         private KeyCode _trigger;
         [SerializeField]

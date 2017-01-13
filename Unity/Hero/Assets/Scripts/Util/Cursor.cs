@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
 namespace Util {
-	public class Cursor : Navigable {
-
+	public class Cursor : Navigable
+	{
 		public override Vector3 Position {
 			get {
 				Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);

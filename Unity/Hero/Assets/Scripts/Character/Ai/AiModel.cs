@@ -1,6 +1,7 @@
 ﻿namespace Character.Ai
 {
-    public class AiModel : CharacterModel {
+    public class AiModel : CharacterModel
+    {
 
     }
 }

@@ -2,7 +2,8 @@
 
 namespace Effect
 {
-    public abstract class Effect : MonoBehaviour {
+    public abstract class Effect : MonoBehaviour
+    {
 
     }
 }

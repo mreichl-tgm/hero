@@ -2,13 +2,9 @@
 
 namespace Item
 {
-    public class Inventory : MonoBehaviour {
-
-        [SerializeField]
-        private ItemSlot[] _baseItems;
+    public class Inventory : MonoBehaviour
+    {
         [SerializeField]
         private GameObject[] _inventory;
-        [SerializeField]
-        private ItemSlot[] _equipment;
     }
 }

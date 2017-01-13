@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
-public class Attributes : MonoBehaviour {
-	
+public class Attributes : MonoBehaviour
+{
     public int Life;
     public int Mana;
     public int Vitality;
