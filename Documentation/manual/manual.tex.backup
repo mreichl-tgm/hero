@@ -1,0 +1,161 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{raleway}
+\usepackage[english]{babel}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[marginal, norule, perpage]{footmisc}
+\usepackage{microtype}
+
+\renewcommand{\thefootnote}{\Roman{footnote}}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=MidnightBlue,
+  urlcolor=MidnightBlue
+}
+
+\title{
+  \textbf{The Hero Project}\\
+  \large{Project Manual}
+  \linebreak
+  \linebreak
+  \small{\texttt{01001000\\01000101\\01010010\\01001111}}
+}
+
+\author{
+  \begin{tabular}{rl}
+    \textbf{Team:}
+    & \textsc{Djordjevic} Filip\\
+    & \textsc{Reichl} Markus \small{\textit{(Project Manager)}}\\
+    & \textsc{Tekin} Abdurrahim\\
+    & \textsc{Wellner} Florian\\
+    \\
+    \textbf{Supervision:}
+    & \textsc{Dolezal} Dominik
+  \end{tabular}
+}
+
+\begin{document}
+\begin{titlepage}
+  \clearpage
+  \maketitle
+  \thispagestyle{empty}
+  
+  \begin{abstract}
+    \begin{flushleft}
+      The Hero Project is a \textbf{bullethell roguelike multiplayer RPG} providing a very unique storytelling and gameplay experience.
+      
+      Its main goal as a school project is to create a solid base for a video game ready for further development. The core should be highly abstract, stable and easy to extend.
+      \linebreak
+      \linebreak
+      This document explains how the Hero Project, including all features found in the \textit{Functional Specification} document, is realised by the team.
+     \end{flushleft}
+  \end{abstract}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+The Hero Project is a \textbf{
+  bullethell
+  \footnote{A video game sub-genre where the screen is usually covered in bullets.}
+  roguelike
+  \footnote{A video game sub-genre which, based on the \href{http://roguebasin.com/roguelike-definition}{Roguebasin Interpretation}, is defined by 
+    \begin{itemize}
+      \item \textbf{Permanent Failure:} The player is encouraged to take responsibility for the risks he takes.
+      \item \textbf{Procedural Environments:} Most of the game world is generated and provides complexity in resources and other elements of the game.
+      \item \textbf{Resources:} The player can manage a limited amount of resources.
+    \end{itemize}
+    The \href{http://roguebasin.com/roguelike-definition}{Roguebasin}, \href{http://roguebasin.com/index.php?title=Berlin_Interpretation}{Berlin} and \href{http://roguetemple.com/roguelike-definition}{Roguetemple} Interpretation may give a more detailed explanation on this subject.
+  }
+  multiplayer
+  \footnote{A multiplayer game allows but does not require clients to play together. The Hero Project is not meant to be played online only!}
+  RPG\footnote{A roleplay game is a game in which the player assumes the roles of characters in a fictional setting and takes responsibility for his acting either through literal acting.}
+} providing a very unique storytelling and gameplay experience.
+
+It is highly inspired by previous titles in the roguelike and roleplay game genres, the most noteworthy being \href{https://realmofthemadgod.com}{Realm of the Mad God}, \href{http://www.devolverdigital.com/games/view/titan-souls}{Titan Souls} and \href{http://dodgeroll.com/gungeon/}{Enter the Gungeon}.
+
+While all mentioned games are using a topdown pixelart setting, the Hero Project is drawn in a very unique combination of high and low resolutions.
+
+\section{Project Goals}
+The main goal of The Hero Project as a school project is to create a solid base for a video game ready for further development.
+This base includes all elements listed in the \textit{Functional} and \textit{Technical} Specifications sections found in the \textit{Functional Specifications} document.
+
+\subsection{Targets}
+\paragraph{Targets}
+The team is going to provide a core game as mentioned earlier and also a prototype for presentation.
+\paragraph{Non Targets}
+The team is not thought to provide a demo version or even a complete game.
+
+\newpage
+
+\section{Team}
+The Hero Projects core as a school project is developed by a static team of 4 members and 1 professor. All members are listed below followed by a short description including their role, responsibilities and contact information.
+\paragraph{Djordjevic Filip} Sound Designer\\
+Filip is responsible for all types of music and sound throughout the game.
+\begin{description}
+ \item Email: \href{mailto:fdjordjevic@student.tgm.ac.at}{fdjordjevic@student.tgm.ac.at}
+\end{description}
+\paragraph{Reichl Markus} Project Manager \textit{\small{(Product Owner)}}\\
+Markus is both project manager and product owner. On development he provides concept art and is responsible for the system's architecture.
+\begin{description}
+ \item Email: \href{mailto:mreichl@student.tgm.ac.at}{mreichl@student.tgm.ac.at}
+\end{description}
+\paragraph{Tekin Abdurrahim} Artist\\
+Burak provides art for both concept and production and is responsible for the aesthetics.
+\begin{description}
+ \item Email: \href{mailto:atekin@student.tgm.ac.at}{atekin@student.tgm.ac.at}
+\end{description}
+\paragraph{Wellner Florian} Software Developer\\
+Florian is responsible for the software development process and helps out at pixelart.
+\begin{description}
+ \item Email: \href{mailto:fwellner@student.tgm.ac.at}{fwellner@student.tgm.ac.at}
+\end{description}
+~\\
+The teams professor \textbf{Dolezal Dominik} acts as a supervisor and provides knowledge in all fields.
+He also helps during development and in the project management process.
+
+\newpage
+
+\section{Documentation Guidelines}
+The Hero Project is using the v-Model\footnote{The V represents the sequence of steps in a project life cycle development. It describes the activities to be performed and the results that have to be produced during product development. In software development, the V-model represents a development process that may be considered an extension of the waterfall model.}, which requires the team to provide at least 2 documents.
+\paragraph{Functional Specification} This document defines all features the product has to provide as a response to a \textit{Requirement Specification} document using the results of a feasibility study.
+\paragraph{Project Manual} This document explains how the project, including all features found in the Functional Specification document, is realised by the team.
+
+\subsection{Work Documentation}
+Every person working on the project has to provide some documentation for every session including at least:
+\\
+\\
+\begin{tabular}{ll}
+ \textbf{Current date:} & \texttt{YY-MM-DD:} Title\\
+ \textbf{Time spent:} & START: \texttt{00:00}\\
+ & TIME SPENT: \texttt{0h 0m}\\
+ \textbf{Description:} & A short description of this session
+\end{tabular}
+
+\subsection{}
+
+\section{Preconditions}
+\subsection{General Preconditions}
+\subsubsection{GitHub}
+The whole development process of the project is managed using a private GitHub\footnote{GitHub is a web-based Git repository hosting service offering distributed version control and source code management.} repository.
+In this case GitHub is also used in the project management process utilising \textit{Issues}\footnote{Issues are used to keep track of tasks, enhancements, and bugs for GitHub projects.} and \textit{Milestones}\footnote{A milestone acts like a container for issues. This is useful for associating issues with specific features or project phases.}.
+Commits\footnote{A Git Commit records changes to a repository.} are used as development documentation.
+
+\subsection{Technical Preconditions}
+As seen in the projects feasibility study there have to be at least some technical conditions to the project. 
+
+\subsubsection{Unity}
+First of all the project is running on top of the Unity game engine using C\# as its main scripting language. 
+Game elements are therefore implemented as Unity's \textit{Game Objects}\footnote{Base class for all entities in Unity.} and actions are realised as \textit{Mono Behaviours}\footnote{Base class from which every Script Component derives.}. 
+
+When used correctly this pattern helps a lot with decoupling although it requires the core game to provide more concrete entities.
+Another limitation is Unity's lacking support for generics, what makes using interfaces for behaviours a lot harder.
+
+\section{Implementation}
+
+\end{document}

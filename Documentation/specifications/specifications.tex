@@ -95,35 +95,36 @@ The team is not thought to provide a demo version or even a complete game.
 
 \section{Functional Specifications}\label{sec:fs}
 \subsection{\texttt{/FS10/} Artificial Intelligence}\label{subsec:fs10ai}
-Entities\footnote{Every interacting object in the game is referred to as a (game) entity} are similar to a \hyperref[subsec:fs20character]{character} and controlled by the game can interact with their environment by using \hyperref[subsec:fs30effects]{effects}.
+Entities\footnote{Every interacting object in the game is referred to as a (game) entity} similar to a \hyperref[subsec:fs20character]{character} and controlled by the game can interact with their environment by using \hyperref[subsec:fs30effects]{effects}.
 The game itself will differentiate between two main types of AIs, NPCs\footnote{A non player character is a character which is not controlled by the player} and Enemies, for most of the time. 
 This does not imply that an AI is either a NPC or an enemy, they just differentiate through their behaviour.
 \paragraph{NPCs}
 NPCs may interact with the player through conversation or providing resources.
 \paragraph{Enemies}
-While NPCs are most likely to be friendly enemies will use their effects to harm the \hyperref[subsec:fs60player]{player}.
-They can also be used to provide \hyperref[subsec:fs41items]{items} and other \hyperref[subsec:fs40resources]{resources} for the player, when an enemy is killed by a attack controlled by the player.
+While NPCs are most likely to be friendly, enemies will use their effects to harm the \hyperref[subsec:fs60player]{player}.
+They can also be used to provide \hyperref[subsec:fs41items]{items} and other \hyperref[subsec:fs40resources]{resources} for the player when an enemy is killed.
 \paragraph{Other AIs}
-AIs different from NPCs and enemies could be objects provided by the environment which interact with the player by using effects.
+AIs different from NPCs and enemies can be objects provided by the environment which interact with the player by using effects.
 \subsection{\texttt{/FS20/} Character}\label{subsec:fs20character}
-Characters are entities which are directly controlled by the client or the game. Every character has the ability to \hyperref[subsec:fs201movement]{move}, \hyperref[subsec:fs202levelling]{level}, use \hyperref[subsec:fs30effects]{effects} and relies on \hyperref[subsec:fs50attributes]{attributes}.
+Characters are entities directly controlled by the client or the game. 
+Every character relies on \hyperref[subsec:fs50attributes]{attributes} and has the ability to \hyperref[subsec:fs201movement]{move}, \hyperref[subsec:fs202levelling]{level} and use \hyperref[subsec:fs30effects]{effects}.
 \subsubsection{\texttt{/FS20.1/} Movement}\label{subsec:fs201movement}
-The characters movement can be controlled by the game or the client using an input of his input of choice.
+The character's movement can be controlled by the game or the client using an input of his choice.
 \subsubsection{\texttt{/FS20.2/} Levelling}\label{subsec:fs202levelling}
-A \hyperref[subsec:fs20character]{character} is able to gain levels which directly modify its \hyperref[subsec:fs50attributes]{attributes}.
+A \hyperref[subsec:fs20character]{character} is able to gain levels which directly modify his \hyperref[subsec:fs50attributes]{attributes}.
 Attributes can also influence AIs, mostly by modifying their attributes, spawn rates\footnote{Entities created in a limited amount of time} or resources.
-Levels can be given by default or increase on specific actions. Common ways for the player to improve his level includes fighting enemies or completing quests\footnote{A search or pursuit made in order to find or obtain something. In this case a quest describes a task for the player to complete.}.
+Levels can be given by default or increase on specific actions. Common ways for the player to improve his level include fighting enemies and completing quests\footnote{A search or pursuit made in order to find or obtain something. In this case a quest describes a task for the player to complete.}.
 \subsection{\texttt{/FS30/} Effects}\label{subsec:fs30effects}
-Entities can be given effects which allow them to interact with their environment.
+Entities can be given effects allowing them to interact with their environment.
 They can be activated, enabled or interact permanently. Common effects include \hyperref[subsec:fs50attributes]{attribute} manipulation, conversations and also attacks.
-\hyperref[subsec:fs60player]{Players} should be able the control their effects using an input of their choice.
+\hyperref[subsec:fs60player]{Players} should be able to control their effects using an input of their choice.
 \subsubsection{\texttt{/FS30.1/} Attack}
-A specific effect which is also implemented in the core game is the attack. Attacks are used to reduce another entities \textit{life} attribute which leads to its death.
+A specific effect, which is also implemented in the core game is the attack. Attacks are used to reduce another entity's \textit{life} attribute leading to its death.
 Attacks interact by firing \hyperref[par:projectiles]{projectiles}.
 \paragraph{Projectiles}\label{par:projectiles}
-Projectiles are used by attacks to harm other entities and also to display it. Short range attacks are implemented as a single projectile with a bigger hitbox\footnote{An area in which one object interacts with another}.
+Projectiles are used by attacks to harm other entities. Short range attacks are implemented as a single projectile with a bigger hitbox\footnote{An area in which one object interacts with another}.
 \subsection{\texttt{/FS40/} Resources}\label{subsec:fs40resources}
-Resources are all collectable objects in the game. They do not interact themselves but can be interacted with by a character through his \hyperref[subsec:fs42inventory]{inventory}.
+Resources refer to all collectable objects in the game. They do not interact by themselves but can be interacted with through a character's \hyperref[subsec:fs42inventory]{inventory}.
 \subsection{\texttt{/FS41/} Items}\label{subsec:fs41items}
 Items are resources that can be given \hyperref[subsec:fs30effects]{effects}, which can only be activated by another entity. 
 They should also be ready to be displayed to the player although this feature will not be implemented in the core game.
@@ -134,7 +135,7 @@ All entities using this functionality are influenced by 8 attributes called \tex
 Their values are used as variables in the entities actions and can also be modified. The number of attributes can also be increased during development.
 Attributes in the core game have to be accessible but not yet interactable for an AI.
 \subsection{\texttt{/FR60/} Player}\label{subsec:fs60player}
-A single client is able to control at least one characters actions and manage its \hyperref[subsec:fs40resources]{resources}.
+A single client is able to control at least one character's actions and manage its \hyperref[subsec:fs40resources]{resources}.
 
 \section{Usability Specifications}\label{sec:us}
 \subsection{\texttt{/US10/} Minimalist User Interface}
@@ -146,11 +147,11 @@ The game runs on multiple platforms including all major desktop operating system
 \subsection{\texttt{/TS20/} Extendable}
 The core game will be highly extendable through abstraction, decoupling and maintainability.
 \subsection{\texttt{/TS30/} Multiplayer Ready}
-Because the actual game is thought to be played on a server with multiple clients the core is developed ready for multiple clients.
+Because the actual game is thought to be played on a server with multiple clients the core is already developed for this purpose.
 A real multiplayer is not necessary in the core game but definitely nice to have.
 
 \section{Quality}
-Extendability and functionality are high priority for the core game because of their huge influence on the later game.
+Extendability and functionality are high priority for the core game because of their huge influence on further development.
 High quality graphics are only required for presentation and are therefore considered low priority.
 
 \end{document}
