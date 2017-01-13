@@ -1,13 +1,14 @@
-﻿using UnityEngine;
-
-public enum ItemType {
+﻿namespace Assets.Scripts.Item
+{
+    public enum ItemType {
 	
-	Weapon,
-	Shield,
-	Ability,
-	HeadArmor,
-	HandArmor,
-	ChestArmor,
-	LegArmor,
-	FootArmor
+        Weapon,
+        Shield,
+        Ability,
+        HeadArmor,
+        HandArmor,
+        ChestArmor,
+        LegArmor,
+        FootArmor
+    }
 }

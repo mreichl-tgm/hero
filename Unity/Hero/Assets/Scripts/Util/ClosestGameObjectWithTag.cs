@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using System.Collections;
-
-namespace Hero.Util {
+﻿namespace Assets.Scripts.Util {
 	public class ClosestGameObjectWithTag : Navigable{
 		[SerializeField]
 		private string targetTag;

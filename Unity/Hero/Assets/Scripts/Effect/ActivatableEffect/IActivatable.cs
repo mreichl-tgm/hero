@@ -1,6 +1,7 @@
-﻿using System;
+﻿namespace Assets.Scripts.Effect.ActivatableEffect
+{
+    public interface IActivatable {
 
-public interface IActivatable {
-
-	void Activate();
+        void Activate();
+    }
 }

@@ -1,12 +1,14 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using Assets.Scripts.Item;
 
-public class PlayerController : MonoBehaviour {
+namespace Assets.Scripts.Character.Player
+{
+    public class PlayerController : MonoBehaviour {
 
-	private PlayerModel model;
-	private Inventory inventory;
+        private PlayerModel model;
+        private Inventory inventory;
 
-	void Awake() {
+        void Awake() {
 		
-	}
+        }
+    }
 }

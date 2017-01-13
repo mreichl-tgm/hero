@@ -1,11 +1,12 @@
-﻿using UnityEngine;
-
-public class ItemModel : MonoBehaviour {
+﻿namespace Assets.Scripts.Item
+{
+    public class ItemModel : MonoBehaviour {
 	
-	[SerializeField]
-	private ItemType type;
-	[SerializeField]
-	private string description;
+        [SerializeField]
+        private ItemType type;
+        [SerializeField]
+        private string description;
 
-	public int damage;
+        public int damage;
+    }
 }

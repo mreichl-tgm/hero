@@ -1,11 +1,12 @@
-﻿using UnityEngine;
+﻿namespace Assets.Scripts.Item
+{
+    public class Inventory : MonoBehaviour {
 
-public class Inventory : MonoBehaviour {
-
-	[SerializeField]
-	private ItemSlot[] baseItems;
-	[SerializeField]
-	private GameObject[] inventory;
-	[SerializeField]
-	private ItemSlot[] equipment;
+        [SerializeField]
+        private ItemSlot[] baseItems;
+        [SerializeField]
+        private GameObject[] inventory;
+        [SerializeField]
+        private ItemSlot[] equipment;
+    }
 }

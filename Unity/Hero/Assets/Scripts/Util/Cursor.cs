@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace Hero.Util {
+﻿namespace Assets.Scripts.Util {
 	public class Cursor : Navigable {
 
 		public override Vector3 position {

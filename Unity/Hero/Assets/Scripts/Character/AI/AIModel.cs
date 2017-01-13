@@ -1,5 +1,6 @@
-﻿using UnityEngine;
+﻿namespace Assets.Scripts.Character.AI
+{
+    public class AIModel : CharacterModel {
 
-public class AIModel : CharacterModel {
-
+    }
 }

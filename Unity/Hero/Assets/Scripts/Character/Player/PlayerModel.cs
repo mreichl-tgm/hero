@@ -1,4 +1,5 @@
-﻿using UnityEngine;
-
-public class PlayerModel : CharacterModel {
+﻿namespace Assets.Scripts.Character.Player
+{
+    public class PlayerModel : CharacterModel {
+    }
 }

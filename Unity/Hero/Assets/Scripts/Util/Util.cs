@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace Hero.Util {
+﻿namespace Assets.Scripts.Util {
 	public static class Util {
 		public static GameObject ClosestGameObjectWithTag(GameObject source, string tag) {
 			
