@@ -31,14 +31,15 @@ class LogReader:
     def read_logs(self):
         with tempfile.TemporaryDirectory() as tmpdir:
             clone(self.wiki.source, tmpdir)
+            
+            if os.listdir(tmpdir):
+                print("The following Markdown Files are available in this GitHub Wiki:")
+                for file in os.listdir(tmpdir):
+                    if file.endswith(".md"):
+                        print("=>    " + file)
 
-            print("The following Markdown Files are available in this GitHub Wiki:")
-            for file in os.listdir(tmpdir):
-                if file.endswith(".md"):
-                    print("=>    " + file)
-
-                if "LOG" in file.upper():
-                    print("      - Time: " + calculate(tmpdir + "/" + file))
+                    if "LOG" in file.upper():
+                        print("      - Time: " + calculate(tmpdir + "/" + file))
 
 
 def calculate(file):
@@ -65,4 +66,4 @@ def calculate(file):
 
 if __name__ == "__main__":
     LogReader(sys.argv)
-    input("")
+    input("Continue to exit")

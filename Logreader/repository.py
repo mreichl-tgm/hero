@@ -5,8 +5,11 @@ import subprocess
 
 def clone(source, tmpdir):
     call = ["git", "clone", source, tmpdir]
-    subprocess.check_call(call)
-
+    try:
+        subprocess.check_call(call)
+    except Exception:
+        print("Repository not found!")
+        return
 
 class Repository:
     source_pattern = re.compile("https://github(\.)com/(.+)/(.+)(\.git)")
@@ -14,7 +17,6 @@ class Repository:
 
 
 class Wiki(Repository):
-    source_pattern = re.compile("https://github(\.)com/(.+)/(.+)(\.wiki\.git)")
     location = None
 
     def __init__(self, args):
@@ -22,11 +24,7 @@ class Wiki(Repository):
             source = args[1]
             print(source)
         else:
-            source = str(input("Link to GitHub Wiki Repository: "))
-
-        if re.search(self.source_pattern, source) is None:
-            print("Not a valid GitHub Wiki Repository!")
-            return
+            source = str(input("Name of the GitHub Repository: "))
 
         if len(args) > 2:
             privacy = args[2]
