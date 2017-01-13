@@ -1,35 +1,36 @@
-﻿using Assets.Scripts.Util;
+﻿using UnityEngine;
+using Util;
 
-namespace Assets.Scripts.Effect.ActivatableEffect
+namespace Effect.ActivatableEffect
 {
     public class Attack : ActivatableEffect {
 	
         [SerializeField]
-        private GameObject projectile;
+        private GameObject _projectile;
         [SerializeField]
-        private float range;
+        private float _range;
         [SerializeField]
-        private float rate;
+        private float _rate;
         [SerializeField]
-        private float speed;
+        private float _speed;
         [SerializeField]
-        private Navigable target;
+        private Navigable _target;
 
-        private float last = 0F;
+        private float _last;
 
         public override void Activate() {
 
-            if (Time.time > last + rate / 100 - transform.root.GetComponent<Attributes>().agility / 100) {
-                last = Time.time;
+            if (Time.time > _last + _rate / 100 - transform.root.GetComponent<Attributes>().Agility / 100) {
+                _last = Time.time;
 
-                Vector3 force = (target.position - transform.position).normalized;
+                Vector3 force = (_target.Position - transform.position).normalized;
 
                 Quaternion rotation = Quaternion.Euler(0, 0, Mathf.Atan2(force.y, force.x) * Mathf.Rad2Deg);
 
-                GameObject instance = Instantiate(projectile, transform.position, rotation) as GameObject;
-                instance.GetComponent<Rigidbody2D>().AddForce (force * speed);
+                GameObject instance = Instantiate(_projectile, transform.position, rotation) as GameObject;
+                instance.GetComponent<Rigidbody2D>().AddForce (force * _speed);
 
-                Destroy (instance, range / 10);
+                Destroy (instance, _range / 10);
             }
         }
     }

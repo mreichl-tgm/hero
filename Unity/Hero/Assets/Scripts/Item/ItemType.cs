@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.Item
+﻿namespace Item
 {
     public enum ItemType {
 	

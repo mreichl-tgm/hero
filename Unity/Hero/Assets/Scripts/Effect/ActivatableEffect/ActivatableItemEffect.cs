@@ -1,15 +1,17 @@
-﻿namespace Assets.Scripts.Effect.ActivatableEffect
+﻿using UnityEngine;
+
+namespace Effect.ActivatableEffect
 {
     public class ActivatableItemEffect : Effect {
 	
         [SerializeField]
-        private KeyCode trigger;
+        private KeyCode _trigger;
         [SerializeField]
-        private ActivatableEffect effect;
+        private ActivatableEffect _effect;
 
         void FixedUpdate() {
-            if (Input.GetKey(trigger)) {
-                effect.Activate();
+            if (Input.GetKey(_trigger)) {
+                _effect.Activate();
             }
         }
     }

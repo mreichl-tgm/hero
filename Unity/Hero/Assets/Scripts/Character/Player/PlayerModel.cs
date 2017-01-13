@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.Character.Player
+﻿namespace Character.Player
 {
     public class PlayerModel : CharacterModel {
     }

@@ -1,11 +1,14 @@
-﻿namespace Assets.Scripts.Item
+﻿using System;
+using UnityEngine;
+
+namespace Item
 {
-    [System.Serializable]
+    [Serializable]
     public class ItemSlot {
 
         [SerializeField]
-        private GameObject item;
+        private GameObject _item;
         [SerializeField]
-        private ItemType type;
+        private ItemType _type;
     }
 }

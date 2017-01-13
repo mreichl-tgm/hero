@@ -1,12 +1,14 @@
-﻿namespace Assets.Scripts.Item
+﻿using UnityEngine;
+
+namespace Item
 {
     public class ItemModel : MonoBehaviour {
 	
         [SerializeField]
-        private ItemType type;
+        private ItemType _type;
         [SerializeField]
-        private string description;
+        private string _description;
 
-        public int damage;
+        public int Damage;
     }
 }

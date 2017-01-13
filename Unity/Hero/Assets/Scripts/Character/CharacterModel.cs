@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class CharacterModel : MonoBehaviour {
+namespace Character
+{
+    public class CharacterModel : MonoBehaviour {
 	
+    }
 }

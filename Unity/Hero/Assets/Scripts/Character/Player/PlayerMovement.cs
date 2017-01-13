@@ -1,22 +1,24 @@
-﻿namespace Assets.Scripts.Character.Player
+﻿using UnityEngine;
+
+namespace Character.Player
 {
     public class PlayerMovement : MonoBehaviour {
 	
-        private Attributes attributes;
-        private Rigidbody2D rb2D;
+        private Attributes _attributes;
+        private Rigidbody2D _rb2D;
 
-        private float vHorizontal;
-        private float vVertical;
+        private float _vHorizontal;
+        private float _vVertical;
 
         void Awake() {
-            rb2D = GetComponent<Rigidbody2D>();
+            _rb2D = GetComponent<Rigidbody2D>();
         }
 
         void FixedUpdate() {
-            vHorizontal = Input.GetAxisRaw("Horizontal");
-            vVertical = Input.GetAxisRaw("Vertical");
+            _vHorizontal = Input.GetAxisRaw("Horizontal");
+            _vVertical = Input.GetAxisRaw("Vertical");
 
-            rb2D.velocity = new Vector2(vHorizontal, vVertical) * GetComponent<Attributes>().speed;
+            _rb2D.velocity = new Vector2(_vHorizontal, _vVertical) * GetComponent<Attributes>().Speed;
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace Assets.Scripts.Util {
+﻿using UnityEngine;
+
+namespace Util {
 	public static class Util {
 		public static GameObject ClosestGameObjectWithTag(GameObject source, string tag) {
 			

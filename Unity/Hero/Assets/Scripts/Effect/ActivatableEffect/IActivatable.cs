@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.Effect.ActivatableEffect
+﻿namespace Effect.ActivatableEffect
 {
     public interface IActivatable {
 

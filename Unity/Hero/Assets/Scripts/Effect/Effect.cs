@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
-public abstract class Effect : MonoBehaviour {
+namespace Effect
+{
+    public abstract class Effect : MonoBehaviour {
 
+    }
 }
