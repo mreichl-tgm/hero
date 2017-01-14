@@ -17,11 +17,11 @@ namespace Effect.ActivatableEffect
         [SerializeField]
         private Navigable _target;
 
-        private float _last;
+        private double _nextShot;
 
         public override void Activate() {
-            if (Time.time > _last + _rate / 100 - transform.root.GetComponent<Attributes>().Agility * 0.001) {
-                _last = Time.time;
+            if (Time.time > _nextShot - transform.root.GetComponent<Attributes>().Agility * 0.001) {
+                _nextShot = Time.time + _rate * 0.01;
 
                 Vector3 force = (_target.Position - transform.position).normalized;
 
