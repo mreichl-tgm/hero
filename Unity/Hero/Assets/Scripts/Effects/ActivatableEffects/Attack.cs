@@ -3,7 +3,7 @@ using Util;
 
 namespace Effects.ActivatableEffects
 {
-    [RequireComponent(typeof(Attributes))]
+    [RequireComponent(typeof(Attributes.Attributes))]
     public class Attack : ActivatableEffect
     {
         [SerializeField]
@@ -20,7 +20,7 @@ namespace Effects.ActivatableEffects
         private double _nextShot;
 
         public override void Activate() {
-            if (Time.time > _nextShot - transform.root.GetComponent<Attributes>().Agility * 0.001) {
+            if (Time.time > _nextShot - transform.root.GetComponent<Attributes.Attributes>().Agility * 0.001) {
                 _nextShot = Time.time + _rate * 0.01;
 
                 Vector3 force = (_target.Position - transform.position).normalized;
@@ -31,7 +31,9 @@ namespace Effects.ActivatableEffects
 
                 if (instance != null)
                 {
+                    instance.transform.parent = transform;
                     instance.GetComponent<Rigidbody2D>().velocity = force * _speed;
+
                     Destroy (instance, _range * 0.1F);
                 }
             }

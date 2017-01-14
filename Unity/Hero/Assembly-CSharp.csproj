@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{C4F7C215-3DA1-BA5A-9DEC-324429A1457B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -45,36 +46,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Attributes.cs" />
-     <Compile Include="Assets\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Scripts\Characters\Ai\AiController.cs" />
-     <Compile Include="Assets\Scripts\Characters\Ai\AiModel.cs" />
-     <Compile Include="Assets\Scripts\Characters\Ai\AiMovement.cs" />
-     <Compile Include="Assets\Scripts\Characters\Ai\AiSpawner.cs" />
-     <Compile Include="Assets\Scripts\Characters\CharacterModel.cs" />
-     <Compile Include="Assets\Scripts\Characters\Movement.cs" />
-     <Compile Include="Assets\Scripts\Characters\Player\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\Characters\Player\PlayerInventory.cs" />
-     <Compile Include="Assets\Scripts\Characters\Player\PlayerModel.cs" />
-     <Compile Include="Assets\Scripts\Characters\Player\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\Effects\ActivatableEffects\ActivatableEffect.cs" />
-     <Compile Include="Assets\Scripts\Effects\ActivatableEffects\Attack.cs" />
-     <Compile Include="Assets\Scripts\Effects\ActivatableEffects\IActivatable.cs" />
-     <Compile Include="Assets\Scripts\Effects\Effect.cs" />
-     <Compile Include="Assets\Scripts\Items\Inventory.cs" />
-     <Compile Include="Assets\Scripts\Items\ItemModel.cs" />
-     <Compile Include="Assets\Scripts\Items\ItemSlot.cs" />
-     <Compile Include="Assets\Scripts\Items\ItemType.cs" />
-     <Compile Include="Assets\Scripts\Util\ClosestGameObjectWithTag.cs" />
-     <Compile Include="Assets\Scripts\Util\Cursor.cs" />
-     <Compile Include="Assets\Scripts\Util\Navigable.cs" />
-     <Compile Include="Assets\Scripts\Util\Util.cs" />
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\Scripts\Attributes\Attribute.cs" />
+    <Compile Include="Assets\Scripts\Attributes\Defence.cs" />
+    <Compile Include="Assets\Scripts\Attributes\Health.cs" />
+    <Compile Include="Assets\Scripts\Attributes\Mana.cs" />
+    <Compile Include="Assets\Scripts\Attributes\Speed.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Characters\Ai\AiController.cs" />
+    <Compile Include="Assets\Scripts\Characters\Ai\AiModel.cs" />
+    <Compile Include="Assets\Scripts\Characters\Ai\AiMovement.cs" />
+    <Compile Include="Assets\Scripts\Characters\Ai\AiSpawner.cs" />
+    <Compile Include="Assets\Scripts\Characters\CharacterModel.cs" />
+    <Compile Include="Assets\Scripts\Characters\Movement.cs" />
+    <Compile Include="Assets\Scripts\Characters\Player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Characters\Player\PlayerInventory.cs" />
+    <Compile Include="Assets\Scripts\Characters\Player\PlayerModel.cs" />
+    <Compile Include="Assets\Scripts\Characters\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Effects\ActivatableEffects\ActivatableEffect.cs" />
+    <Compile Include="Assets\Scripts\Effects\ActivatableEffects\Attack.cs" />
+    <Compile Include="Assets\Scripts\Effects\ActivatableEffects\IActivatable.cs" />
+    <Compile Include="Assets\Scripts\Effects\ActivatableEffects\ProjectileController.cs" />
+    <Compile Include="Assets\Scripts\Effects\Effect.cs" />
+    <Compile Include="Assets\Scripts\Items\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Items\ItemModel.cs" />
+    <Compile Include="Assets\Scripts\Items\ItemSlot.cs" />
+    <Compile Include="Assets\Scripts\Items\ItemType.cs" />
+    <Compile Include="Assets\Scripts\Util\ClosestGameObjectWithTag.cs" />
+    <Compile Include="Assets\Scripts\Util\Cursor.cs" />
+    <Compile Include="Assets\Scripts\Util\Navigable.cs" />
+    <Compile Include="Assets\Scripts\Util\Util.cs" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -84,5 +90,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>

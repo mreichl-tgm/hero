@@ -26,8 +26,8 @@ GameObject:
   - 114: {fileID: 114000013474999618}
   - 114: {fileID: 114000013921409120}
   - 114: {fileID: 114000013604225852}
-  - 60: {fileID: 60000010907870196}
   - 114: {fileID: 114000013942128504}
+  - 61: {fileID: 61000013504025840}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -43,7 +43,7 @@ Transform:
   m_GameObject: {fileID: 1000012954266658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -64,9 +64,9 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!60 &60000010907870196
-PolygonCollider2D:
+  m_Constraints: 4
+--- !u!61 &61000013504025840
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -74,38 +74,11 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.64, y: -0.37}
-      - {x: 0.64, y: -0.24}
-      - {x: 0.56, y: -0.16}
-      - {x: 0.53999996, y: -0.16}
-      - {x: 0.53999996, y: 0.06}
-      - {x: 0.52, y: 0.08}
-      - {x: 0.51, y: 0.14999999}
-      - {x: 0.42999998, y: 0.31}
-      - {x: 0.29, y: 0.44}
-      - {x: 0.19999999, y: 0.48}
-      - {x: 0.14999999, y: 0.5}
-      - {x: -0.32, y: 0.5}
-      - {x: -0.37, y: 0.48999998}
-      - {x: -0.41, y: 0.45}
-      - {x: -0.48999998, y: 0.32999998}
-      - {x: -0.59, y: 0.14999999}
-      - {x: -0.58, y: -0.14}
-      - {x: -0.56, y: -0.16}
-      - {x: -0.64, y: -0.26999998}
-      - {x: -0.64, y: -0.35999998}
-      - {x: -0.56, y: -0.44}
-      - {x: -0.48, y: -0.48}
-      - {x: -0.17, y: -0.5}
-      - {x: 0.22, y: -0.5}
-      - {x: 0.22, y: -0.48}
-      - {x: 0.48, y: -0.48}
-      - {x: 0.57, y: -0.45}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5625}
 --- !u!114 &114000011739798744
 MonoBehaviour:
   m_ObjectHideFlags: 1

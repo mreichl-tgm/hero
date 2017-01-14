@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Item
+  - Projectile
   - Enemy
   layers:
   - Default
@@ -41,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Characters
+    uniqueID: 1803998945
+    locked: 0
+  - name: Effects
+    uniqueID: 6655821
     locked: 0

@@ -7,7 +7,8 @@ namespace Characters
     {
         protected Rigidbody2D Rb2D;
 
-        void Awake() {
+        void Awake()
+        {
             Rb2D = GetComponent<Rigidbody2D>();
         }
     }
