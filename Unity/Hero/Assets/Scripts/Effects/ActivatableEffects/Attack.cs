@@ -31,7 +31,7 @@ namespace Effects.ActivatableEffects
 
                 if (instance != null)
                 {
-                    instance.GetComponent<Rigidbody2D>().AddForce (force * _speed);
+                    instance.GetComponent<Rigidbody2D>().velocity = force * _speed;
                     Destroy (instance, _range * 0.1F);
                 }
             }

@@ -172,9 +172,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _projectile: {fileID: 1000010566113942, guid: 71bfc4c63cd787b4c9ba960ca3e4da00,
     type: 2}
-  _range: 5
-  _rate: 10
-  _speed: 20
+  _range: 10
+  _rate: 15
+  _speed: 8
   _target: {fileID: 114000013942128504}
 --- !u!114 &114000013942128504
 MonoBehaviour:
