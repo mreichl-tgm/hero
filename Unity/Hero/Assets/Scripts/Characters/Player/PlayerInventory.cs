@@ -9,7 +9,7 @@ namespace Characters.Player
         [SerializeField] private ItemSlot[] _baseItems;
         [SerializeField] private EquipmentSlot[] _equipment;
 
-        void FixedUpdate()
+        private void FixedUpdate()
         {
             foreach (EquipmentSlot es in _equipment)
             {
@@ -19,7 +19,7 @@ namespace Characters.Player
         }
 
         [System.Serializable]
-        class EquipmentSlot : ItemSlot
+        private class EquipmentSlot : ItemSlot
         {
             [SerializeField]
             public KeyCode Trigger;

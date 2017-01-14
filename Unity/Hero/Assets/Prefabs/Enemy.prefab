@@ -22,12 +22,12 @@ GameObject:
   - 50: {fileID: 50000013998412956}
   - 114: {fileID: 114000011739798744}
   - 212: {fileID: 212000012532936778}
-  - 114: {fileID: 114000012457553114}
   - 114: {fileID: 114000013474999618}
   - 114: {fileID: 114000013921409120}
   - 114: {fileID: 114000013604225852}
   - 114: {fileID: 114000013942128504}
   - 61: {fileID: 61000013504025840}
+  - 114: {fileID: 114000013851933520}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -90,25 +90,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10b30db82e31084448b03ead6decb3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114000012457553114
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012954266658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe0dfc603db347d42a83446eba332bb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Life: 100
-  Mana: 100
-  Vitality: 10
-  Wisdom: 10
-  Attack: 10
-  Defence: 10
-  Speed: 2
-  Agility: 5
 --- !u!114 &114000013474999618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,6 +113,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTag: Player
+--- !u!114 &114000013851933520
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012954266658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d297dbd7d02f80a4aa347da8dae8d97c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _min: 5
+  _max: 5
+  _value: 5
 --- !u!114 &114000013921409120
 MonoBehaviour:
   m_ObjectHideFlags: 1

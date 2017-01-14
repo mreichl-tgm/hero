@@ -12,7 +12,7 @@ namespace Characters.Ai
         private Vector3 _spawnPoint;
         private float _nextSpawn;
 
-        void FixedUpdate() {
+        private void FixedUpdate() {
             _spawnPoint = transform.position;
 
             if (Time.time > _nextSpawn + _spawnRate / 100) {

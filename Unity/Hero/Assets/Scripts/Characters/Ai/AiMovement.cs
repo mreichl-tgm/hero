@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
+using Attributes;
 
 namespace Characters.Ai
 {
-    [RequireComponent(typeof(Attributes.Attributes))]
+    [RequireComponent(typeof(Attribute))]
     public class AiMovement : Movement
     {
         [SerializeField]
@@ -10,12 +11,12 @@ namespace Characters.Ai
 
         private GameObject _target;
 
-        void FixedUpdate () {
+        private void FixedUpdate () {
             _target = Util.Util.ClosestGameObjectWithTag(gameObject, _targetTag);
 
             Vector3 force = (_target.transform.position - transform.position).normalized;
 
-            Rb2D.velocity = new Vector2(force.x, force.y) * GetComponent<Attributes.Attributes>().Speed;
+            Rb2D.velocity = new Vector2(force.x, force.y) * GetComponent<Attribute>().Value;
         }
     }
 }

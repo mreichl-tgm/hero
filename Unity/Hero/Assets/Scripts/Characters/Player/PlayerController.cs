@@ -9,7 +9,7 @@ namespace Characters.Player
         private PlayerModel _model;
         private PlayerInventory _inventory;
 
-        void Awake()
+        private void Awake()
         {
             _model = GetComponent<PlayerModel>();
             _inventory = GetComponent<PlayerInventory>();
