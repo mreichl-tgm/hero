@@ -15,7 +15,18 @@
 ~$*.ppt*
 .~vsdx
 
+## Unity
+[Tt]emp/
+[Oo]bj/
+[Bb]uild
+/[Ll]ibrary/
+sysinfo.txt
+*.stackdump
+
 ## Visual Studio
+[Ee]xported[Oo]bj/
+*.csproj
+*.sln*
 *.booproj
 *.coverage
 *.pidb
@@ -28,11 +39,9 @@
 *.userprefs
 *.opt
 *.tmp
-*/.vs
+.vs
 */ExportedObj
 */obj
-
-sysinfo.txt
 
 ## Unity
 *.cs.meta
@@ -48,7 +57,9 @@ sysinfo.txt
 .Spotlight-V100
 .Trashes
 ehthumbs.db
-Thumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
+sysinfo.txt
 
 ## Pycache
 __pycache__
