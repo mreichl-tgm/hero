@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Util;
 
-namespace Effect.ActivatableEffect
+namespace Effects.ActivatableEffects
 {
     [RequireComponent(typeof(Attributes))]
     public class Attack : ActivatableEffect

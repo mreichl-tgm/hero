@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Character.Ai
+namespace Characters.Ai
 {
     public class AiSpawner : Movement
     {

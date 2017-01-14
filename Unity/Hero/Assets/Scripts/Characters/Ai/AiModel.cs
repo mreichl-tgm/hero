@@ -1,4 +1,4 @@
-﻿namespace Character.Ai
+﻿namespace Characters.Ai
 {
     public class AiModel : CharacterModel
     {

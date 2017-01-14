@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Character.Player
+namespace Characters.Player
 {
     [RequireComponent(typeof(Attributes))]
     public class PlayerMovement : Movement

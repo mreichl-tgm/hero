@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Character.Ai
+namespace Characters.Ai
 {
     [RequireComponent(typeof(Attributes))]
     public class AiMovement : Movement

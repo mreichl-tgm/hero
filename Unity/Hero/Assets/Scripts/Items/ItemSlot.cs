@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Item
+namespace Items
 {
     [Serializable]
     public class ItemSlot

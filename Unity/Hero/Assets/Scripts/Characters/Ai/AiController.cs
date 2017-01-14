@@ -1,7 +1,7 @@
-﻿using Effect.ActivatableEffect;
+﻿using Effects.ActivatableEffects;
 using UnityEngine;
 
-namespace Character.Ai
+namespace Characters.Ai
 {
     [RequireComponent(typeof(AiModel))]
     public class AiController : MonoBehaviour

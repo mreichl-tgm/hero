@@ -1,4 +1,4 @@
-﻿namespace Character.Player
+﻿namespace Characters.Player
 {
     public class PlayerModel : CharacterModel {
 

@@ -1,8 +1,8 @@
-﻿using Effect.ActivatableEffect;
-using Item;
+﻿using Effects.ActivatableEffects;
+using Items;
 using UnityEngine;
 
-namespace Character.Player
+namespace Characters.Player
 {
     public class PlayerInventory : Inventory
     {

@@ -1,4 +1,4 @@
-﻿namespace Effect.ActivatableEffect
+﻿namespace Effects.ActivatableEffects
 {
     public abstract class ActivatableEffect : Effect, IActivatable
     {
