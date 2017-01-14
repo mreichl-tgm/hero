@@ -5,7 +5,8 @@ namespace Item
     public class ItemModel : MonoBehaviour
     {
         [SerializeField]
-        private ItemType _type;
+        public readonly ItemType Type;
+
         [SerializeField]
         private string _description;
 

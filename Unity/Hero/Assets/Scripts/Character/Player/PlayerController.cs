@@ -1,5 +1,4 @@
-﻿using Item;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Character.Player
 {
@@ -8,12 +7,12 @@ namespace Character.Player
     public class PlayerController : MonoBehaviour
     {
         private PlayerModel _model;
-        private Inventory _inventory;
+        private PlayerInventory _inventory;
 
         void Awake()
         {
             _model = GetComponent<PlayerModel>();
-            _inventory = GetComponent<Inventory>();
+            _inventory = GetComponent<PlayerInventory>();
         }
     }
 }

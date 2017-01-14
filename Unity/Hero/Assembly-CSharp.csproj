@@ -58,7 +58,6 @@
      <Compile Include="Assets\Scripts\Character\Player\PlayerModel.cs" />
      <Compile Include="Assets\Scripts\Character\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Effect\ActivatableEffect\ActivatableEffect.cs" />
-     <Compile Include="Assets\Scripts\Effect\ActivatableEffect\ActivatableItemEffect.cs" />
      <Compile Include="Assets\Scripts\Effect\ActivatableEffect\Attack.cs" />
      <Compile Include="Assets\Scripts\Effect\ActivatableEffect\IActivatable.cs" />
      <Compile Include="Assets\Scripts\Effect\Effect.cs" />

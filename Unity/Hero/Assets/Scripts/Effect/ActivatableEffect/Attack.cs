@@ -20,7 +20,7 @@ namespace Effect.ActivatableEffect
         private float _last;
 
         public override void Activate() {
-            if (Time.time > _last + _rate / 100 - transform.root.GetComponent<Attributes>().Agility / 100) {
+            if (Time.time > _last + _rate / 100 - transform.root.GetComponent<Attributes>().Agility * 0.001) {
                 _last = Time.time;
 
                 Vector3 force = (_target.Position - transform.position).normalized;
@@ -28,9 +28,12 @@ namespace Effect.ActivatableEffect
                 Quaternion rotation = Quaternion.Euler(0, 0, Mathf.Atan2(force.y, force.x) * Mathf.Rad2Deg);
 
                 GameObject instance = Instantiate(_projectile, transform.position, rotation) as GameObject;
-                instance.GetComponent<Rigidbody2D>().AddForce (force * _speed);
 
-                Destroy (instance, _range / 10);
+                if (instance != null)
+                {
+                    instance.GetComponent<Rigidbody2D>().AddForce (force * _speed);
+                    Destroy (instance, _range * 0.1F);
+                }
             }
         }
     }
