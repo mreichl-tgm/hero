@@ -5,7 +5,7 @@
 *.aux
 
 ## JetBrains
-.idea
+.idea/
 
 ## Microsoft Office
 *.tmp
@@ -19,9 +19,12 @@
 [Tt]emp/
 [Oo]bj/
 [Bb]uild
-/[Ll]ibrary/
+[Ll]ibrary/
 sysinfo.txt
 *.stackdump
+*.cs.meta
+*.log
+*/UpgradeLog.htm
 
 ## Visual Studio
 [Ee]xported[Oo]bj/
@@ -40,16 +43,6 @@ sysinfo.txt
 *.opt
 *.tmp
 .vs
-*/ExportedObj
-*/obj
-
-## Unity
-*.cs.meta
-*.log
-*/UpgradeLog.htm
-*/Temp
-*/Library
-
 ## OS
 .DS_Store
 .DS_Store?
@@ -59,7 +52,6 @@ sysinfo.txt
 ehthumbs.db
 [Tt]humbs.db
 [Dd]esktop.ini
-sysinfo.txt
 
 ## Pycache
 __pycache__

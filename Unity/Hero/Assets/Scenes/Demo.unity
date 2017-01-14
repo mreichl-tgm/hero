@@ -291,7 +291,7 @@ MonoBehaviour:
   _equipment:
   - _item: {fileID: 1755585796}
     _type: 0
-  _input: 323
+    Trigger: 323
 --- !u!114 &1217242475
 MonoBehaviour:
   m_ObjectHideFlags: 0

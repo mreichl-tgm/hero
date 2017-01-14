@@ -80,9 +80,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _projectile: {fileID: 1000010566113942, guid: 71bfc4c63cd787b4c9ba960ca3e4da00,
     type: 2}
-  _range: 0
-  _rate: 0
-  _speed: 0
+  _range: 5
+  _rate: 5
+  _speed: 20
   _target: {fileID: 114000011574695050}
 --- !u!212 &212000013403383446
 SpriteRenderer:

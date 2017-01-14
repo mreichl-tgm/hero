@@ -6,23 +6,23 @@ namespace Characters.Player
 {
     public class PlayerInventory : Inventory
     {
-        [SerializeField]
-        private ItemSlot[] _baseItems;
-        [SerializeField]
-        private ItemSlot[] _equipment;
-
-        [SerializeField]
-        private KeyCode _input;
+        [SerializeField] private ItemSlot[] _baseItems;
+        [SerializeField] private EquipmentSlot[] _equipment;
 
         void FixedUpdate()
         {
-            if (Input.GetKey(_input))
+            foreach (EquipmentSlot es in _equipment)
             {
-                foreach (ItemSlot i in _equipment)
-                {
-                    i.Item.GetComponent<ActivatableEffect>().Activate();
-                }
+                if (Input.GetKey(es.Trigger))
+                    es.Item.GetComponent<ActivatableEffect>().Activate();
             }
+        }
+
+        [System.Serializable]
+        class EquipmentSlot : ItemSlot
+        {
+            [SerializeField]
+            public KeyCode Trigger;
         }
     }
 }
