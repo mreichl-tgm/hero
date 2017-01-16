@@ -45,7 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Attributes\Agility.cs" />
      <Compile Include="Assets\Scripts\Attributes\Attribute.cs" />
+     <Compile Include="Assets\Scripts\Attributes\Health.cs" />
+     <Compile Include="Assets\Scripts\Attributes\Speed.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Characters\Ai\AiController.cs" />
      <Compile Include="Assets\Scripts\Characters\Ai\AiModel.cs" />

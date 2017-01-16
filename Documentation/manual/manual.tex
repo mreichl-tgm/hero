@@ -18,7 +18,7 @@
 }
 
 \title{
-  \textbf{The Hero Project}\\
+  \textbf{Project Hero}\\
   \large{Project Manual}
   \linebreak
   \linebreak
@@ -46,7 +46,7 @@
   
   \begin{abstract}
     \begin{flushleft}
-      The Hero Project is a \textbf{bullethell roguelike multiplayer RPG} providing a very unique storytelling and gameplay experience.
+      Project Hero is a \textbf{bullethell roguelike multiplayer RPG} providing a very unique storytelling and gameplay experience.
       
       Its main goal as a school project is to create a solid base for a video game ready for further development. The core should be highly abstract, stable and easy to extend.
       \linebreak
@@ -82,7 +82,7 @@ It is highly inspired by previous titles in the roguelike and roleplay game genr
 While all mentioned games are using a topdown pixelart setting, the Hero Project is drawn in a very unique combination of high and low resolutions.
 
 \section{Project Goals}
-The main goal of The Hero Project as a school project is to create a solid base for a video game ready for further development.
+The main goal of Project Hero as a school project is to create a solid base for a video game ready for further development.
 This base includes all elements listed in the \textit{Functional} and \textit{Technical} Specifications sections found in the \textit{Functional Specifications} document.
 
 \subsection{Targets}
@@ -94,7 +94,7 @@ The team is not thought to provide a demo version or even a complete game.
 \newpage
 
 \section{Team}
-The Hero Projects core as a school project is developed by a static team of 4 members and 1 professor. All members are listed below followed by a short description including their role, responsibilities and contact information.
+Project Hero's core as a school project is developed by a static team of 4 members and 1 professor. All members are listed below followed by a short description including their role, responsibilities and contact information.
 \paragraph{Djordjevic Filip} Sound Designer\\
 Filip is responsible for all types of music and sound throughout the game.
 \begin{description}
@@ -123,7 +123,7 @@ He also helps during development and in the project management process.
 
 \section{Documentation Guidelines}
 \subsection{Project Documentation}
-The Hero Project is using the v-Model\footnote{The V-model represents the sequence of steps in a project life cycle development. It describes the activities to be performed and the results that have to be produced during product development. In software development, the V-model represents a development process that may be considered an extension of the waterfall model.}, which requires the team to provide at least 2 documents.
+Project Hero is using the v-Model\footnote{The V-model represents the sequence of steps in a project life cycle development. It describes the activities to be performed and the results that have to be produced during product development. In software development, the V-model represents a development process that may be considered an extension of the waterfall model.}, which requires the team to provide at least 2 documents.
 \paragraph{Functional Specification} This document defines all features the product has to provide as a response to a \textit{Requirement Specification} document using the results of a feasibility study.
 \paragraph{Project Manual} This document explains how the project, including all features found in the Functional Specification document, is realised by the team.
 
@@ -161,46 +161,48 @@ Another limitation is Unity's lacking support for generics, what makes using int
 \section{Implementation}
 \subsection{Functionality}
 \subsubsection{Artificial Intelligence}\label{subsec:fs10ai}
-Entities\footnote{Every interacting object in the game is referred to as a (game) entity} similar to a \hyperref[subsec:fs20character]{character} and controlled by the game can interact with their environment by using \hyperref[subsec:fs30effects]{effects}.
+Entities\footnote{Every interacting object in the game is referred to as a (game) entity} similar to a character and controlled by the game can interact with their environment by using effects.
 The game itself will differentiate between two main types of AIs, NPCs\footnote{A non player character is a character which is not controlled by the player} and Enemies, for most of the time. 
 This does not imply that an AI is either a NPC or an enemy, they just differentiate through their behaviour.
 \paragraph{NPCs}
 NPCs may interact with the player through conversation or providing resources.
 \paragraph{Enemies}
-While NPCs are most likely to be friendly, enemies will use their effects to harm the \hyperref[subsec:fs60player]{player}.
-They can also be used to provide \hyperref[subsec:fs41items]{items} and other \hyperref[subsec:fs40resources]{resources} for the player when an enemy is killed.
+While NPCs are most likely to be friendly, enemies will use their effects to harm the player.
+They can also be used to provide items and other resources for the player when an enemy is killed.
 \paragraph{Other AIs}
 AIs different from NPCs and enemies can be objects provided by the environment which interact with the player by using effects.
-\subsubsection{Character}\label{subsec:fs20character}
+\subsubsection{Character}
 Characters are entities directly controlled by the client or the game. 
-Every character relies on \hyperref[subsec:fs50attributes]{attributes} and has the ability to \hyperref[subsec:fs201movement]{move}, \hyperref[subsec:fs202levelling]{level} and use \hyperref[subsec:fs30effects]{effects}.
-\paragraph{Movement}\label{subsec:fs201movement}
+Every character relies on attributes and has the ability to move, level and use effects.
+\paragraph{Movement}
 The character's movement can be controlled by the game or the client using an input of his choice.
-\paragraph{Levelling}\label{subsec:fs202levelling}
-A \hyperref[subsec:fs20character]{character} is able to gain levels which directly modify his \hyperref[subsec:fs50attributes]{attributes}.
+\paragraph{Levelling}
+A character is able to gain levels which directly modify his attributes.
 Attributes can also influence AIs, mostly by modifying their attributes, spawn rates\footnote{Entities created in a limited amount of time} or resources.
-Levels can be given by default or increase on specific actions. Common ways for the player to improve his level include fighting enemies and completing quests\footnote{A search or pursuit made in order to find or obtain something. In this case a quest describes a task for the player to complete.}.
-\subsubsection{Effects}\label{subsec:fs30effects}
+Levels can be given by default or increase on specific actions. 
+Common ways for the player to improve his level include fighting enemies and completing quests\footnote{A search or pursuit made in order to find or obtain something. 
+In this case a quest describes a task for the player to complete.}.
+\subsubsection{Effects}
 Entities can be given effects allowing them to interact with their environment.
-They can be activated, enabled or interact permanently. Common effects include \hyperref[subsec:fs50attributes]{attribute} manipulation, conversations and also attacks.
-\hyperref[subsec:fs60player]{Players} should be able to control their effects using an input of their choice.
+They can be activated, enabled or interact permanently. Common effects include attribute manipulation, conversations and also attacks.
+Players should be able to control their effects using an input of their choice.
 \paragraph{Attack}
 A specific effect, which is also implemented in the core game is the attack. Attacks are used to reduce another entity's \textit{life} attribute leading to its death.
-Attacks interact by firing \hyperref[par:projectiles]{projectiles}.
-\subparagraph{Projectiles}\label{par:projectiles}
+Attacks interact by firing projectiles.
+\subparagraph{Projectiles}
 Projectiles are used by attacks to harm other entities. Short range attacks are implemented as a single projectile with a bigger hitbox\footnote{An area in which one object interacts with another}.
-\subsubsection{Resources}\label{subsec:fs40resources}
-Resources refer to all collectable objects in the game. They do not interact by themselves but can be interacted with through a character's \hyperref[subsec:fs42inventory]{inventory}.
-\subsubsection{Items}\label{subsec:fs41items}
-Items are resources that can be given \hyperref[subsec:fs30effects]{effects}, which can only be activated by another entity. 
+\subsubsection{Resources}
+Resources refer to all collectable objects in the game. They do not interact by themselves but can be interacted with through a character's inventory.
+\subsubsection{Items}
+Items are resources that can be given effects, which can only be activated by another entity. 
 They should also be ready to be displayed to the player although this feature will not be implemented in the core game.
-\subsubsection{Inventory}\label{subsec:fs42inventory}
+\subsubsection{Inventory}
 An inventory keeps a limited amount of items and can hold base items, equipment and other resources.
-\subsubsection{Attributes}\label{subsec:fs50attributes}
+\subsubsection{Attributes}
 All entities using this functionality are influenced by 8 attributes called \textit{health, mana, damage, defence, vitality, wisdom, speed} and \textit{agility}. 
 Their values are used as variables in the entities actions and can also be modified. The number of attributes can also be increased during development.
 Attributes in the core game have to be accessible but not yet interactable for an AI.
-\subsubsection{Player}\label{subsec:fs60player}
-A single client is able to control at least one character's actions and manage its \hyperref[subsec:fs40resources]{resources}.
+\subsubsection{Player}
+A single client is able to control at least one character's actions and manage its resources.
 
 \end{document}

@@ -3,7 +3,7 @@ using Attributes;
 
 namespace Characters.Ai
 {
-    [RequireComponent(typeof(Attribute))]
+    [RequireComponent(typeof(Speed))]
     public class AiMovement : Movement
     {
         [SerializeField]
@@ -16,7 +16,7 @@ namespace Characters.Ai
 
             Vector3 force = (_target.transform.position - transform.position).normalized;
 
-            Rb2D.velocity = new Vector2(force.x, force.y) * GetComponent<Attribute>().Value;
+            Rb2D.velocity = new Vector2(force.x, force.y) * GetComponent<Speed>().Value;
         }
     }
 }

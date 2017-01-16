@@ -167,8 +167,7 @@ MonoBehaviour:
   _spawnedAis:
   - {fileID: 1000012954266658, guid: 9e929355c2b5d334ea4dc49b735fcf95, type: 2}
   - {fileID: 1000010949766388, guid: 9891cb84205f7494b8737581185fecbf, type: 2}
-  - {fileID: 1217242468}
-  _spawnRate: 50
+  _spawnRate: 200
 --- !u!1 &1217242468
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,13 +177,13 @@ GameObject:
   m_Component:
   - 4: {fileID: 1217242471}
   - 50: {fileID: 1217242469}
-  - 114: {fileID: 1217242470}
   - 114: {fileID: 1217242473}
-  - 114: {fileID: 1217242475}
   - 212: {fileID: 1217242472}
   - 114: {fileID: 1217242474}
-  - 61: {fileID: 1217242476}
+  - 114: {fileID: 1217242475}
+  - 114: {fileID: 1217242470}
   - 114: {fileID: 1217242477}
+  - 114: {fileID: 1217242476}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -294,7 +293,7 @@ MonoBehaviour:
   _equipment:
   - _item: {fileID: 1755585796}
     _type: 0
-    Trigger: 323
+    Trigger: 32
 --- !u!114 &1217242475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,31 +302,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1217242468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe0dfc603db347d42a83446eba332bb5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c55e9c893e691d4382c84015b054c96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Life: 100
-  Mana: 100
-  Vitality: 10
-  Wisdom: 10
-  Attack: 10
-  Defence: 10
-  Speed: 10
-  Agility: 10
---- !u!61 &1217242476
-BoxCollider2D:
+  _min: 1
+  _max: 20
+  _value: 10
+--- !u!114 &1217242476
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1217242468}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7772ba2f04cbe74599d22a6c069312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1217242477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,12 +327,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1217242468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d297dbd7d02f80a4aa347da8dae8d97c, type: 3}
+  m_Script: {fileID: 11500000, guid: fc1ad2299ea98fa48acd39211029a58d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _min: 10
-  _max: 10
-  _value: 10
+  _min: 1
+  _max: 20
+  _value: 5
 --- !u!1 &1244025019
 GameObject:
   m_ObjectHideFlags: 0

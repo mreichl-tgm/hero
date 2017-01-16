@@ -4,7 +4,7 @@ using Util;
 
 namespace Effects.ActivatableEffects
 {
-    [RequireComponent(typeof(Attribute))]
+    [RequireComponent(typeof(Agility))]
     public class Attack : ActivatableEffect
     {
         [SerializeField]
@@ -21,7 +21,7 @@ namespace Effects.ActivatableEffects
         private double _nextShot;
 
         public override void Activate() {
-            if (Time.time > _nextShot - transform.root.GetComponent<Attribute>().Value * 0.001) return;
+            if (Time.time < _nextShot - transform.root.GetComponent<Agility>().Value * 0.001) return;
 
             _nextShot = Time.time + _rate * 0.01;
 
