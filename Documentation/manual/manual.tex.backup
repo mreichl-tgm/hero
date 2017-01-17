@@ -237,9 +237,18 @@ Multiple units are contained in a milestone.
 \subsection{\texttt{/Milestone/} Basic Prototype}
 A simple prototype to get into Unity and test the development environment.
 \\ Due to date: \texttt{27.09.2016}
-\subsection{\texttt{/Milestone/} Project Requirements}
-Submission of the \textit{Project Requirements} documents.
+\\ 
+\subsection{\texttt{/Milestone/} Project Documentation}
+Submission of all required documents.
 \\ Due to date: \texttt{04.10.2016}
+\subsubsection{\texttt{/Unit/} Project Requirements}
+Definition of the project requirements.
+\subsubsection{\texttt{/Unit/} Feasibility Study}
+A study about the projects feasibility to check whether the project is possible and also to choose a specific path for the development process.
+\subsubsection{\texttt{/Unit/} Functional Specification}
+Definition of all features the project has to provide due to its date of approval.
+\subsubsection{\texttt{/Unit/} Project Manual}
+Start of this document.
 \subsection{\texttt{/Milestone/} TDOT TGM}
 A prototype for presentation to use for the open-door day at school.
 \\ Due to date: \texttt{22.11.2016}
@@ -249,5 +258,8 @@ Completion of the core.
 \subsection{\texttt{/Milestone/} Prototype}
 A prototype for presentation at project approval.
 \\ Due to date: \texttt{17.01.2017}
+\subsection{\texttt{/Milestone/} Project Approval}
+Official date of approval for the project including its presentation.
+\\ Due to date: \texttt{24.01.2017}
 
 \end{document}
