@@ -234,32 +234,62 @@ The software architecture is implemented based on the following UML\footnote{The
 \section{Implementation}
 This section provides information about the development process and splits different subjects into specific units and tasks.
 Multiple units are contained in a milestone.
-\subsection{\texttt{/Milestone/} Basic Prototype}
+\bigskip\\
+All attendees are marked on each section by a specific letter:
+
+\begin{tabular}{l l}
+ Fillip Djordjevic & D\\
+ Markus Reichl & R\\
+ Abdurrahim Tekin & T\\
+ Florian Wellner & W
+\end{tabular}
+
+\subsection{\texttt{/Milestone/} Basic Prototype \small{(D R T W)}}
 A simple prototype to get into Unity and test the development environment.
-\\ Due to date: \texttt{27.09.2016}
-\\ 
-\subsection{\texttt{/Milestone/} Project Documentation}
+\\ Date: \texttt{27.09.2016}
+\paragraph{\texttt{/Task/} Unity Roguelike Tutorial \small{(D R T W)}}~\\
+In order to get acquainted to the Unity engine, all members of the team have to complete the \href{https://unity3d.com/learn/tutorials/projects/2d-roguelike-tutorial}{Roguelike Tutorial} by Unity.
+\\ Time: \texttt{5 hours}
+\paragraph{\texttt{/Task/} Concept \small{(D R T W)}}~\\
+Definition of a clear concept for the basic prototype.
+\\ Time: \texttt{2 hours}
+\paragraph{\texttt{/Task/} Development \small{(R W)}}~\\
+Development of the basic prototypes backend and a simple 
+\\ Time: \texttt{8 hours}
+\subsection{\texttt{/Milestone/} Project Documentation \small{(R)}}
 Submission of all required documents.
-\\ Due to date: \texttt{04.10.2016}
-\subsubsection{\texttt{/Unit/} Project Requirements}
+\\ Date: \texttt{04.10.2016}
+\subsubsection{\texttt{/Unit/} Project Requirements \small{(R)}}
 Definition of the project requirements.
-\subsubsection{\texttt{/Unit/} Feasibility Study}
-A study about the projects feasibility to check whether the project is possible and also to choose a specific path for the development process.
-\subsubsection{\texttt{/Unit/} Functional Specification}
+\paragraph{\texttt{/Task/} Project Requirements Document \small{(R)}}~\\
+Creation of the \textit{Project Requirements} document.
+\\ Time: \texttt{3 hours}
+\subsubsection{\texttt{/Unit/} Feasibility Study \small{(R)}}
+A study about the project's feasibility to check whether the project is possible and also to choose a specific path for the development process.
+\paragraph{\texttt{/Task/} Feasibility Study Document \small{(R)}}~\\
+Creation of the \textit{Feasibility Study} document.
+\\ Time: \texttt{5 hours}
+\subsubsection{\texttt{/Unit/} Functional Specification \small{(R)}}
 Definition of all features the project has to provide due to its date of approval.
-\subsubsection{\texttt{/Unit/} Project Manual}
+\paragraph{\texttt{/Task/} Functional Specifications Document \small{(R)}}~\\
+Creation of the \textit{Functional Specifications} document.
+\\ Time: \texttt{4 hours}
+\subsubsection{\texttt{/Unit/} Project Manual \small{(R)}}
 Start of this document.
-\subsection{\texttt{/Milestone/} TDOT TGM}
+\paragraph{\texttt{/Task/} Project Manual Document \small{(R)}}~\\
+Creation of the \textit{Project Manual} document.
+\\ Time: \texttt{5 hours}
+\subsection{\texttt{/Milestone/} TDOT TGM \small{(R T W)}}
 A prototype for presentation to use for the open-door day at school.
-\\ Due to date: \texttt{22.11.2016}
-\subsection{\texttt{/Milestone/} Core}
-Completion of the core.
-\\ Due to date: \texttt{27.12.2016}
-\subsection{\texttt{/Milestone/} Prototype}
+\\ Date: \texttt{22.11.2016}
+\subsection{\texttt{/Milestone/} Core \small{(R T W)}}
+Creation of the actual core.
+\\ Date: \texttt{27.12.2016}
+\subsection{\texttt{/Milestone/} Prototype \small{(R T W)}}
 A prototype for presentation at project approval.
-\\ Due to date: \texttt{17.01.2017}
-\subsection{\texttt{/Milestone/} Project Approval}
+\\ Date: \texttt{17.01.2017}
+\subsection{\texttt{/Milestone/} Project Approval \small{(R T W)}}
 Official date of approval for the project including its presentation.
-\\ Due to date: \texttt{24.01.2017}
+\\ Date: \texttt{24.01.2017}
 
 \end{document}
