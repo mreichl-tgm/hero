@@ -5,6 +5,7 @@ using Util;
 namespace Effects.ActivatableEffects
 {
     [RequireComponent(typeof(Agility))]
+    [RequireComponent(typeof(Damage))]
     public class Attack : ActivatableEffect
     {
         [SerializeField]

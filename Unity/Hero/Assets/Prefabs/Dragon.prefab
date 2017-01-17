@@ -30,6 +30,8 @@ GameObject:
   - 60: {fileID: 60000012451232940}
   - 114: {fileID: 114000012792210848}
   - 114: {fileID: 114000013653562490}
+  - 114: {fileID: 114000013515920572}
+  - 114: {fileID: 114000013575166358}
   m_Layer: 0
   m_Name: Dragon
   m_TagString: Enemy
@@ -137,6 +139,34 @@ MonoBehaviour:
   _rate: 20
   _speed: 5
   _target: {fileID: 114000013730508440}
+--- !u!114 &114000013515920572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010949766388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7a85decb6ad5e4d8b3324aed97d3f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _min: 5
+  _max: 10
+  _value: 5
+--- !u!114 &114000013575166358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010949766388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0cd41ae18f8cef40954f97fc632c033, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _min: 0
+  _max: 100
+  _value: 20
 --- !u!114 &114000013653562490
 MonoBehaviour:
   m_ObjectHideFlags: 1

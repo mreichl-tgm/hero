@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Attributes\Agility.cs" />
      <Compile Include="Assets\Scripts\Attributes\Attribute.cs" />
+     <Compile Include="Assets\Scripts\Attributes\Damage.cs" />
      <Compile Include="Assets\Scripts\Attributes\Health.cs" />
      <Compile Include="Assets\Scripts\Attributes\Speed.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />

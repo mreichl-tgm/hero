@@ -29,6 +29,8 @@ GameObject:
   - 61: {fileID: 61000013504025840}
   - 114: {fileID: 114000014034663316}
   - 114: {fileID: 114000013896120564}
+  - 114: {fileID: 114000012163584028}
+  - 114: {fileID: 114000012024381260}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -91,6 +93,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10b30db82e31084448b03ead6decb3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000012024381260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012954266658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0cd41ae18f8cef40954f97fc632c033, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _min: 0
+  _max: 100
+  _value: 25
+--- !u!114 &114000012163584028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012954266658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7a85decb6ad5e4d8b3324aed97d3f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _min: 5
+  _max: 10
+  _value: 5
 --- !u!114 &114000013474999618
 MonoBehaviour:
   m_ObjectHideFlags: 1

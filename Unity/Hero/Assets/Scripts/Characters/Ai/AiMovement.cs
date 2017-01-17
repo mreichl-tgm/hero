@@ -14,6 +14,8 @@ namespace Characters.Ai
         private void FixedUpdate () {
             _target = Util.Util.ClosestGameObjectWithTag(gameObject, _targetTag);
 
+            if (_target == null) return;
+
             Vector3 force = (_target.transform.position - transform.position).normalized;
 
             Rb2D.velocity = new Vector2(force.x, force.y) * GetComponent<Speed>().Value;
