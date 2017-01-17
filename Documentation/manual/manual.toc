@@ -1,0 +1,49 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Project Goals}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Targets}{2}{subsection.2.1}
+\contentsline {paragraph}{Targets}{2}{section*.2}
+\contentsline {subparagraph}{A core game}{3}{section*.3}
+\contentsline {subparagraph}{A prototype for presentation}{3}{section*.4}
+\contentsline {paragraph}{Non Targets}{3}{section*.5}
+\contentsline {subparagraph}{A full game}{3}{section*.6}
+\contentsline {subparagraph}{A demo version}{3}{section*.7}
+\contentsline {section}{\numberline {3}Team}{4}{section.3}
+\contentsline {paragraph}{Djordjevic Filip}{4}{section*.8}
+\contentsline {paragraph}{Reichl Markus}{4}{section*.9}
+\contentsline {paragraph}{Tekin Abdurrahim}{4}{section*.10}
+\contentsline {paragraph}{Wellner Florian}{4}{section*.11}
+\contentsline {section}{\numberline {4}Documentation Guidelines}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}Project Documentation}{5}{subsection.4.1}
+\contentsline {paragraph}{Functional Specification}{5}{section*.12}
+\contentsline {paragraph}{Project Manual}{5}{section*.13}
+\contentsline {subsection}{\numberline {4.2}Work Documentation}{5}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Development Documentation}{5}{subsubsection.4.2.1}
+\contentsline {section}{\numberline {5}Preconditions}{6}{section.5}
+\contentsline {subsection}{\numberline {5.1}General Preconditions}{6}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}GitHub}{6}{subsubsection.5.1.1}
+\contentsline {subsection}{\numberline {5.2}Technical Preconditions}{6}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Unity}{6}{subsubsection.5.2.1}
+\contentsline {section}{\numberline {6}Requirements}{7}{section.6}
+\contentsline {subsection}{\numberline {6.1}Functionality}{7}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Artificial Intelligence}{7}{subsubsection.6.1.1}
+\contentsline {paragraph}{NPCs}{7}{section*.14}
+\contentsline {paragraph}{Enemies}{7}{section*.15}
+\contentsline {paragraph}{Other AIs}{7}{section*.16}
+\contentsline {subsubsection}{\numberline {6.1.2}Character}{7}{subsubsection.6.1.2}
+\contentsline {paragraph}{Movement}{7}{section*.17}
+\contentsline {paragraph}{Levelling}{7}{section*.18}
+\contentsline {subsubsection}{\numberline {6.1.3}Effects}{8}{subsubsection.6.1.3}
+\contentsline {paragraph}{Attack}{8}{section*.19}
+\contentsline {paragraph}{Projectiles}{8}{section*.20}
+\contentsline {subsubsection}{\numberline {6.1.4}Resources}{8}{subsubsection.6.1.4}
+\contentsline {subsubsection}{\numberline {6.1.5}Items}{8}{subsubsection.6.1.5}
+\contentsline {subsubsection}{\numberline {6.1.6}Inventory}{8}{subsubsection.6.1.6}
+\contentsline {subsubsection}{\numberline {6.1.7}Attributes}{9}{subsubsection.6.1.7}
+\contentsline {subsubsection}{\numberline {6.1.8}Player}{9}{subsubsection.6.1.8}
+\contentsline {subsection}{\numberline {6.2}Specifications}{9}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Cross-Platform}{9}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Extendable}{9}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Multiplayer Ready}{9}{subsubsection.6.2.3}
+\contentsline {section}{\numberline {7}Architecture}{10}{section.7}
+\contentsline {section}{\numberline {8}Implementation}{12}{section.8}

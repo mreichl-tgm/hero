@@ -7,6 +7,7 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage[marginal, norule, perpage]{footmisc}
 \usepackage{microtype}
+\usepackage{graphicx}
 
 \renewcommand{\thefootnote}{\Roman{footnote}}
 
@@ -48,7 +49,7 @@
     \begin{flushleft}
       Project Hero is a \textbf{bullethell roguelike multiplayer RPG} providing a very unique storytelling and gameplay experience.
       
-      Its main goal as a school project is to create a solid base for a video game ready for further development. The core should be highly abstract, stable and easy to extend.
+      Its main goal is to create a solid base for a video game ready for further development. The core should be highly abstract, stable and easy to extend.
       \linebreak
       \linebreak
       This document goes into detail with the projects technical feasibility and reviews different approaches resulting into a clear conclusion and the best way to go.
@@ -57,6 +58,7 @@
 \end{titlepage}
 
 \tableofcontents
+
 \newpage
 
 \section{Introduction}
@@ -84,23 +86,18 @@ While all mentioned games are using a topdown pixelart setting, the Hero Project
 \newpage
 
 \section{Project Goals}
-The main goal of Project Hero as a school project is to create a solid base for a video game ready for further development.
+The main goal of Project Hero is to create a solid base for a video game ready for further development.
 This base includes all elements listed in the \textit{Functional} and \textit{Technical Requirements} sections found in the \textit{Requirement Specification} document.
-Because The Hero Project as a school project only has to provide the core of the game there is only little need to review the economic or legal feasibility.
 
 \subsection{Targets}
 Before development can start the aim of the project has to be as clear as possible. Therefore the following targets and non-targets have been declared.
 \paragraph{Targets}
-\begin{itemize}
- \item A core game ready for further development including all Functional and Technical Requirements.
- \item A prototype for presentation
-\end{itemize}
+\subparagraph{A core game} A prototype ready for further development including all Functional and Technical Requirements. Date of of submission is set on 17th of January 2017.
+\subparagraph{A prototype for presentation} A simple setup including a player, an enemy and items including effects to declare an attack.
 
 \paragraph{Non Targets}
-\begin{itemize}
- \item A full game
- \item A demo version
-\end{itemize}
+\subparagraph{A full game} The core game is not meant to provide a full game including graphics, gameplay and multiplayer. This goal is not reachable in time and may not be in budget.
+\subparagraph{A demo version} The core game should demonstrate how the game works and how it can be extended. Not how the game will look like in production,
 
 \newpage
 
@@ -155,7 +152,7 @@ Implementing a levelling system for the player which interacts with a characters
 In order to keep the core clean while adding lots of new features to the game effects have to be abstract and highly encapsulated. They should not depend on the identity of their owning entity and therefore work out of the box.
 A decoupling pattern called the Component Pattern can be used to manage multiple effects and keep the game extendable. Most popular engines also rely on this pattern.
 \paragraph{Items}~\\
-In order to story items for multiple players at least some kind of a database is required. There are multiple solutions for this problem, lots of game engines even bring their own database implementations.
+In order to store items for multiple players at least some kind of a database is required. There are multiple solutions for this problem, lots of game engines even bring their own database implementations.
 Items also have to be store- and even equipable by the player which makes them great candidates to hold effects the player can activate. Items should only usable by the player because they only interact through their effects which also covers the requirement \textit{Item Interaction}. 
 This is possible because all other entities use effects as components directly.
 \paragraph{Attributes}~\\
@@ -176,6 +173,8 @@ Here too an engine can help and improve the project lot.
 The development process is quite intense and might not fit the schedule when every part of the game is hard coded. The team suggests using a framework which already provides essential components.
 Possible candidates are engines like Gamemaker and \hyperref[subsubsec:unity]{Unity} or frameworks like \hyperref[subsubsec:monogame]{Monogame} or \hyperref[subsubsec:vulkan]{Vulkan}.
 
+\newpage
+
 \subsection{Engines and Frameworks}
 Because of the volume of this project the team highly recommends using an engine which already provides key elements and can be easily extended.
 After comparing lots of possible options the team decided on 3 major possibilities.
@@ -190,9 +189,31 @@ Unity is a huge game engine and built for 3D games while also providing 2D suppo
 Lots of popular games were developed in Unity recently including \href{http://www.oriblindforest.com}{Ori And The Blind Forest}, \href{https://playrust.com}{Rust} and one game also found in the Requirement Specification document \href{http://dodgeroll.com/gungeon/}{Enter the Gungeon}.
 \subsubsection{Vulkan}\label{subsubsec:vulkan}
 Vulkan is the next level of OpenGL released in 2016. Using Vulkan basically means working from scratch. It allows the user to work very close to the computers hardware and offers a lot of possibilities not found in OpenGL.
+\newpage
+\subsubsection{Comparison}
+To compare these options the following table rates all features relevant for the project from a minimum of 1 to a maximum of 3.
+\bigskip
+\\
+\begin{tabular}{l|l|l|l}
+ & Monogame & Unity & Vulkan\\
+ \hline
+ Features 	& 2 & 3 & 1\\
+ Documentation 	& 1 & 3 & 1\\
+ Performance 	& 2 & 2 & 1\\
+ Cross-Platform & 3 & 3 & 0\\
+ Popularity 	& 1 & 3 & 1\\
+ \hline
+ & 9 & 14 & 4
+\end{tabular}
+\bigskip
+\\
+Looking at this short comparison it seems rather clear which framework is the one to choose.
+
 \subsubsection{Conclusion}
 Comparing all these engines and frameworks the team got really excited looking at the games running on Unity and its amazing features which would otherwise be really hard to implement. 
 While Monogame and Vulkan give the developer a lot of freedom, Unity gives a whole swiss army knife. Looking at the teams schedule and the features the project needs Unity seems to be a great option and maybe the only option.
+
+\newpage
 
 \section{Economic Feasibility}
 Although the core game itself is not sold to any user base the team did some research and gathered information about the market.
@@ -202,24 +223,45 @@ Right now there are many unknown and few popular bullethell roguelikes available
 A comparison of those games, their players and economics, can be found below. All information was gathered on the 26th September of 2016.
 
 \paragraph{Realm of the Mad God}~\\
+\begin{center}
+ \includegraphics[width=\textwidth]{./rotmg.jpg}
+\end{center}
 Realm of the Mad God, or ROTMG for short, is a bullethell MMORPG\footnote{A massively multiplayer online role-playing game is a story-driven online video game in which a player interacts with a large number of other players.} currently played by 1.7 billion accounts.
 It is free to play and makes profit from in game transactions which brought in 1.36 billion Euros in total since 2011.\\
 While the game still has a high user base a lot of players actually wish for a better game.
 
 \paragraph{Titan Souls}~\\
+\begin{center}
+ \includegraphics[width=\textwidth]{./titan.jpg}
+\end{center}
 Titan Souls is a roguelike RPG released in 2015. Since then it gathered 170 thousand players and acquired 1.65 billion Euros in total. It is available on steam for 14.99 Euros at the moment.
+\bigskip
+
+It uses a clear pixelart style and has basically no interface which improves gameplay a lot and makes a great game.
+
+\newpage
 
 \paragraph{Dungeon Souls}~\\
+\begin{center}
+ \includegraphics[width=\textwidth]{./dungeon.jpg}
+\end{center}
 Dungeon Souls is also a bullethell roguelike RPG released in 2015 and counts about 35 thousand players. It was developed by a indie studio and is now available on steam for 12.99 Euros which is quite a lot for this genre. 
 The game gathered 300 thousand Euros since its release.
 
+\newpage
+
 \paragraph{Enter the Gungeon}~\\
+\begin{center}
+ \includegraphics[width=\textwidth]{./gungeon.jpg}
+\end{center}
 Another bullethell roguelike RPG released in 2016 with a great art style and a huge user base of 414 thousand players which is quite a lot for an indie game. 
 It is now sold for 14.99 Euros and gathered 4.095 billion Euros since its release.
 
 \subsubsection{Conclusion}
 The information gathered while researching for these games shows lots of possibilities but also sets high quality standards. 
 There are many small indie developers in this genre but only few who rise to the top mostly because of their creativity or storytelling.
+
+\newpage
 
 \section{Schedule Feasibility}
 Time is a very important factor in this project because it can become very consuming and may even take too long to be completed.

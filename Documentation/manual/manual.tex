@@ -7,6 +7,7 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage[marginal, norule, perpage]{footmisc}
 \usepackage{microtype}
+\usepackage{graphicx}
 
 \renewcommand{\thefootnote}{\Roman{footnote}}
 
@@ -86,15 +87,19 @@ The main goal of Project Hero as a school project is to create a solid base for 
 This base includes all elements listed in the \textit{Functional} and \textit{Technical} Specifications sections found in the \textit{Functional Specifications} document.
 
 \subsection{Targets}
+Before development can start the aim of the project has to be as clear as possible. Therefore the following targets and non-targets have been declared.
 \paragraph{Targets}
-The team is going to provide a core game as mentioned earlier and also a prototype for presentation.
+\subparagraph{A core game} A prototype ready for further development including all Functional and Technical Requirements. Date of of submission is set on 17th of January 2017.
+\subparagraph{A prototype for presentation} A simple setup including a player, an enemy and items including effects to declare an attack.
+
 \paragraph{Non Targets}
-The team is not thought to provide a demo version or even a complete game.
+\subparagraph{A full game} The core game is not meant to provide a full game including graphics, gameplay and multiplayer. This goal is not reachable in time and may not be in budget.
+\subparagraph{A demo version} The core game should demonstrate how the game works and how it can be extended. Not how the game will look like in production.
 
 \newpage
 
 \section{Team}
-Project Hero's core as a school project is developed by a static team of 4 members and 1 professor. All members are listed below followed by a short description including their role, responsibilities and contact information.
+Project Hero's core is developed by a static team of 4 members and 1 professor. All members are listed below followed by a short description including their role, responsibilities and contact information.
 \paragraph{Djordjevic Filip} Sound Designer\\
 Filip is responsible for all types of music and sound throughout the game.
 \begin{description}
@@ -123,7 +128,7 @@ He also helps during development and in the project management process.
 
 \section{Documentation Guidelines}
 \subsection{Project Documentation}
-Project Hero is using the v-Model\footnote{The V-model represents the sequence of steps in a project life cycle development. It describes the activities to be performed and the results that have to be produced during product development. In software development, the V-model represents a development process that may be considered an extension of the waterfall model.}, which requires the team to provide at least 2 documents.
+Project Hero is based on the v-Model\footnote{The V-model represents the sequence of steps in a project life cycle development. It describes the activities to be performed and the results that have to be produced during product development. In software development, the V-model represents a development process that may be considered an extension of the waterfall model.}, which requires the team to provide at least 2 documents.
 \paragraph{Functional Specification} This document defines all features the product has to provide as a response to a \textit{Requirement Specification} document using the results of a feasibility study.
 \paragraph{Project Manual} This document explains how the project, including all features found in the Functional Specification document, is realised by the team.
 
@@ -158,7 +163,7 @@ Game elements are therefore implemented as Unity's \textit{Game Objects}\footnot
 When used correctly this pattern helps a lot with decoupling although it requires the core game to provide more concrete entities.
 Another limitation is Unity's lacking support for generics, what makes using interfaces for behaviours a lot harder.
 
-\section{Implementation}
+\section{Requirements}
 \subsection{Functionality}
 \subsubsection{Artificial Intelligence}\label{subsec:fs10ai}
 Entities\footnote{Every interacting object in the game is referred to as a (game) entity} similar to a character and controlled by the game can interact with their environment by using effects.
@@ -189,7 +194,7 @@ Players should be able to control their effects using an input of their choice.
 \paragraph{Attack}
 A specific effect, which is also implemented in the core game is the attack. Attacks are used to reduce another entity's \textit{life} attribute leading to its death.
 Attacks interact by firing projectiles.
-\subparagraph{Projectiles}
+\paragraph{Projectiles}
 Projectiles are used by attacks to harm other entities. Short range attacks are implemented as a single projectile with a bigger hitbox\footnote{An area in which one object interacts with another}.
 \subsubsection{Resources}
 Resources refer to all collectable objects in the game. They do not interact by themselves but can be interacted with through a character's inventory.
@@ -204,5 +209,29 @@ Their values are used as variables in the entities actions and can also be modif
 Attributes in the core game have to be accessible but not yet interactable for an AI.
 \subsubsection{Player}
 A single client is able to control at least one character's actions and manage its resources.
+
+\subsection{Specifications}
+\subsubsection{Cross-Platform}
+The game runs on multiple platforms including all major desktop operating systems and popular consoles using the cross-platform features of the Unity game engine.
+\subsubsection{Extendable}
+The core game will be highly extendable through abstraction, decoupling and maintainability.
+\subsubsection{Multiplayer Ready}
+Because the actual game is thought to be played on a server with multiple clients the core is already developed for this purpose.
+A real multiplayer is not necessary in the core game but definitely nice to have.
+
+\newpage
+
+\section{Architecture}
+The software architecture is implemented based on the following UML\footnote{The Unified Modeling Language is a general-purpose, developmental, modeling language in the field of software engineering, that is intended to provide a standard way to visualise the design of a system.} Class diagrams\footnote{In software engineering, a class diagram in UML is a type of static structure diagram that describes the structure of a system by showing the system's classes, their attributes, operations, and the relationships among objects.}.
+\begin{center}
+ \includegraphics[width=\textwidth]{./interaction.png}
+\end{center}
+
+\begin{center}
+ \includegraphics[height=\textheight]{./data.png}
+\end{center}
+
+\section{Implementation}
+This section provides information about the development process of the Hero project.
 
 \end{document}
