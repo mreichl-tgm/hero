@@ -9,11 +9,11 @@ namespace Characters.Ai
         private AiModel _model;
         private Attack[] _attacks;
 
-        void Awake() {
+        private void Awake() {
             _attacks = GetComponents<Attack>();
         }
 
-        void FixedUpdate() {
+        public void FixedUpdate() {
             foreach (Attack attack in _attacks)
             {
                 attack.Activate();

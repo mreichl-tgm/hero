@@ -13,7 +13,7 @@ namespace Characters.Player
         {
             foreach (EquipmentSlot es in _equipment)
             {
-                if (Input.GetKey(es.Trigger))
+                if (Input.GetButton("Fire1"))
                     es.Item.GetComponent<ActivatableEffect>().Activate();
             }
         }
@@ -22,7 +22,7 @@ namespace Characters.Player
         private class EquipmentSlot : ItemSlot
         {
             [SerializeField]
-            public KeyCode Trigger;
+            public string Button;
         }
     }
 }
