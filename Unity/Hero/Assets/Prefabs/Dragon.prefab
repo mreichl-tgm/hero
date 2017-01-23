@@ -137,8 +137,8 @@ MonoBehaviour:
     type: 2}
   _range: 10
   _rate: 20
-  _speed: 5
-  _target: {fileID: 114000013730508440}
+  _speed: 20
+  _target: {fileID: 114000013983482244}
 --- !u!114 &114000013515920572
 MonoBehaviour:
   m_ObjectHideFlags: 1
