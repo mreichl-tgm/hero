@@ -16,7 +16,3 @@ All members of the team responsible for a certain area of the project.
 > Florian Wellner [@fwellner-tgm](http://github.com/fwellner-tgm) <br>
 > `ROLE >>` Software Developer <br>
 > `AREA >>` Software Development
-
-### Members
-> <i>Filip Djordjevic</i> [@filipdjordjevic](http://github.com/filipdjordjevic) <br>
-> ?
