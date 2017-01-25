@@ -38,18 +38,14 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>E:/Programme/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>E:/Programme/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Attributes\Agility.cs" />
      <Compile Include="Assets\Scripts\Attributes\Attribute.cs" />
-     <Compile Include="Assets\Scripts\Attributes\Damage.cs" />
-     <Compile Include="Assets\Scripts\Attributes\Health.cs" />
-     <Compile Include="Assets\Scripts\Attributes\Speed.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Characters\Ai\AiController.cs" />
      <Compile Include="Assets\Scripts\Characters\Ai\AiModel.cs" />
@@ -66,6 +62,7 @@
      <Compile Include="Assets\Scripts\Effects\ActivatableEffects\IActivatable.cs" />
      <Compile Include="Assets\Scripts\Effects\ActivatableEffects\ProjectileController.cs" />
      <Compile Include="Assets\Scripts\Effects\Effect.cs" />
+     <Compile Include="Assets\Scripts\IAlive.cs" />
      <Compile Include="Assets\Scripts\Items\Inventory.cs" />
      <Compile Include="Assets\Scripts\Items\ItemModel.cs" />
      <Compile Include="Assets\Scripts\Items\ItemSlot.cs" />
@@ -75,10 +72,10 @@
      <Compile Include="Assets\Scripts\Util\Navigable.cs" />
      <Compile Include="Assets\Scripts\Util\Util.cs" />
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/Programme/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>E:/Programme/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

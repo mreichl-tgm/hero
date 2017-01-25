@@ -3,11 +3,12 @@ using UnityEngine;
 
 namespace Characters.Player
 {
-    [RequireComponent(typeof(Speed))]
     public class PlayerMovement : Movement
     {
+        [SerializeField] private Attribute _speed;
+
         private void FixedUpdate() {
-            Rb2D.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * GetComponent<Speed>().Value;
+            Rb2D.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * _speed.Value;
         }
     }
 }

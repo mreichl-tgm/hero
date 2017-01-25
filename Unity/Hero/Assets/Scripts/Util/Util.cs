@@ -4,18 +4,19 @@ namespace Util {
 	public static class Util {
 		public static GameObject ClosestGameObjectWithTag(GameObject source, string tag)
 		{
-			GameObject[] targets = GameObject.FindGameObjectsWithTag(tag);
+			var targets = GameObject.FindGameObjectsWithTag(tag);
 			GameObject closest = null;
 
-			float closestDistance = Mathf.Infinity;
+			var closestDistance = Mathf.Infinity;
 
-			foreach (GameObject target in targets) {
-				float distance = Vector3.Distance(target.transform.position, source.transform.position);
+			foreach (var target in targets) {
+				var distance = Vector3.Distance(target.transform.position, source.transform.position);
 
-				if (distance < closestDistance) {
-					closest = target;
-					closestDistance = distance;
-				}
+			    if (distance > closestDistance)
+			        continue;
+
+			    closest = target;
+			    closestDistance = distance;
 			}
 
 			return closest;

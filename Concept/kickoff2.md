@@ -4,38 +4,30 @@
 - Reichl
 - Tekin
 - Wellner
-? Djordjevic
-? Kumar
 ? Ceylan
+? Chellakudam
 
 ### Aufgaben
-- Reichl        (Product Owner)
+- Reichl    (Product Owner)
     - Grafik
     - Entwicklung
         - Programmierung
         - Architektur
     - Koordination
-    
+
 - Tekin     (Grafiker)
     - Grafik
     - Design
 
-- Wellner       (Entwickler)
-    - Entwicklung
-        - Programmierung
-        
-- Djordjevic
-    ?
-    
-- Kumar
-    - Dokumentation
-    ?
-    
-- Ceylan
+- Wellner   (Entwickler)
     - Entwicklung
         - Programmierung
 
-        
+- ? Ceylan
+    - Entwicklung
+        - Programmierung
+
+
 ## 2. Inhalt
 
 ### Tgm Community
