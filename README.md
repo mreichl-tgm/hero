@@ -9,16 +9,14 @@ All members of the team responsible for a certain area of the project.
 > `ROLE >>` Product Owner <br>
 > `AREA >>` Art Direction, System Architecture and Project Management
 
-<br>
 > Abdurrahim Burak Tekin [@atekin-tgm](http://github.com/atekin-tgm) <br>
 > `ROLE >>` Artist <br>
 > `AREA >>` Art and Design
 
-<br>
 > Florian Wellner [@fwellner-tgm](http://github.com/fwellner-tgm) <br>
-> `ROLE >>` Software Developer` <br>
+> `ROLE >>` Software Developer <br>
 > `AREA >>` Software Development
 
 ### Members
-> <i>Filip Djordjevic</i> [@filipdjordjevic](http://github.com/filipdjordjevic)
+> <i>Filip Djordjevic</i> [@filipdjordjevic](http://github.com/filipdjordjevic) <br>
 > ?
