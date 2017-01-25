@@ -2,14 +2,18 @@
 Hero is a bullethell roguelike multiplayer RPG providing a very unique storytelling and gameplay experience.
 
 ## Team
-Markus Reichl [@re1](http://github.com/re1)
->> Product Owner
 
-Abdurrahim Burak Tekin [@atekin-tgm](http://github.com/atekin-tgm)
->> Artist
+### Core
+All members of the team responsible for a certain area of the project.
+> Markus Reichl [@re1](http://github.com/re1)
+> `ROLE >>` Product Owner
 
-Florian Wellner [@fwellner-tgm](http://github.com/fwellner-tgm)
->> Software Developer
+> Abdurrahim Burak Tekin [@atekin-tgm](http://github.com/atekin-tgm)
+> `ROLE >>` Artist
 
-<i>Filip Djordjevic</i> [@filipdjordjevic](http://github.com/filipdjordjevic)
->> ?
+> Florian Wellner [@fwellner-tgm](http://github.com/fwellner-tgm)
+> `ROLE >>` Software Developer` 
+
+### Members
+> <i>Filip Djordjevic</i> [@filipdjordjevic](http://github.com/filipdjordjevic)
+> ?
