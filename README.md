@@ -1,10 +1,15 @@
-<h3>The Hero Project</h3>
-<h4>A bullethell rougelike multiplayer RPG</h4>
-<br>
+# Hero
+Hero is a bullethell roguelike multiplayer RPG providing a very unique storytelling and gameplay experience.
 
-Filip Djordjevic | Markus Reichl | Burak Tekin | Florian Wellner
----------------- | ---------------- | ---------------- | ----------------
-Sounddesigner | Project Manager | Artist | Software Developer
-[@filipdjordjevic](http://github.com/filipdjordjevic) | [@re1](http://github.com/re1) |[@atekin-tgm](http://github.com/atekin-tgm) |[@fwellner-tgm](http://github.com/fwellner-tgm)
+## Team
+Markus Reichl [@re1](http://github.com/re1)
+>> Product Owner
 
-<i>Supervision: Dominik Dolezal</i>
+Abdurrahim Burak Tekin [@atekin-tgm](http://github.com/atekin-tgm)
+>> Artist
+
+Florian Wellner [@fwellner-tgm](http://github.com/fwellner-tgm)
+>> Software Developer
+
+<i>Filip Djordjevic</i> [@filipdjordjevic](http://github.com/filipdjordjevic)
+>> ?
