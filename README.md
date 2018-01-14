@@ -1,5 +1,5 @@
 # Hero
-Hero is a bullethell roguelike multiplayer RPG providing a very unique storytelling and gameplay experience.
+Hero is a bullethell roguelike multiplayer RPG developed for school using agile project management methods.
 
 ## Team
 **Markus Reichl** [@re1](http://github.com/re1)
